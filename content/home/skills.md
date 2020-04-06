@@ -21,15 +21,33 @@ subtitle = ""
   description = "90%"
   
 [[feature]]
+  icon = "python"
+  icon_pack = "fab"
+  name = "python"
+  description = "80%"
+  
+[[feature]]
   icon = "chart-line"
   icon_pack = "fas"
   name = "Statistics"
-  description = "100%"  
+  description = "100%" 
+
+[[feature]]
+  icon = "database"
+  icon_pack = "fas"
+  name = "Database (SQL,Nosql)"
+  description = "100%" 
   
 [[feature]]
-  icon = "camera-retro"
+  icon = "music"
   icon_pack = "fas"
-  name = "Photography"
-  description = "10%"
+  name = "Music"
+  description = "80%"
+  
+[[feature]]
+  icon = "users"
+  icon_pack = "fas"
+  name = "Management"
+  description = "80%"
 
 +++
