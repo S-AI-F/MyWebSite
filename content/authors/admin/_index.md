@@ -29,9 +29,9 @@ social:
 - icon: envelope
   icon_pack: fas
   link: '#contact'
-- icon: twitter
+- icon: linkedin
   icon_pack: fab
-  link: https://twitter.com/GeorgeCushen
+  link: https://fr.linkedin.com/in/saif-shabou-19174961
 - icon: google-scholar
   icon_pack: ai
   link: https://scholar.google.com/citations?hl=fr&user=WqQB450AAAAJ
