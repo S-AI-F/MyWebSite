@@ -14,17 +14,446 @@
     
     <item>
       <title>My first post</title>
-      <link>/post/my-first-post/</link>
+      <link>/post-old/my-first-post/</link>
       <pubDate>Mon, 06 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>/post/my-first-post/</guid>
+      <guid>/post-old/my-first-post/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Image classification with Keras</title>
+      <link>/post/clothing-image-classification/</link>
+      <pubDate>Wed, 05 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>/post/clothing-image-classification/</guid>
+      <description>&lt;p&gt;This guides trains a neural network model to classify images of clothing, like sneakers and shirts.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# Tensorflow and tf.keras
+import tensorflow as tf
+from tensorflow import keras
+
+# Helper libraries
+import numpy as np
+import matplotlib.pyplot as plt
+
+print(tf.__version__)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;---------------------------------------------------------------------------
+
+ImportError                               Traceback (most recent call last)
+
+~\Anaconda3\lib\site-packages\tensorflow\python\pywrap_tensorflow.py in &amp;lt;module&amp;gt;
+     57 
+---&amp;gt; 58   from tensorflow.python.pywrap_tensorflow_internal import *
+     59 
+
+
+~\Anaconda3\lib\site-packages\tensorflow\python\pywrap_tensorflow_internal.py in &amp;lt;module&amp;gt;
+     27             return _mod
+---&amp;gt; 28     _pywrap_tensorflow_internal = swig_import_helper()
+     29     del swig_import_helper
+
+
+~\Anaconda3\lib\site-packages\tensorflow\python\pywrap_tensorflow_internal.py in swig_import_helper()
+     23             try:
+---&amp;gt; 24                 _mod = imp.load_module(&#39;_pywrap_tensorflow_internal&#39;, fp, pathname, description)
+     25             finally:
+
+
+~\Anaconda3\lib\imp.py in load_module(name, file, filename, details)
+    241         else:
+--&amp;gt; 242             return load_dynamic(name, filename, file)
+    243     elif type_ == PKG_DIRECTORY:
+
+
+~\Anaconda3\lib\imp.py in load_dynamic(name, path, file)
+    341             name=name, loader=loader, origin=path)
+--&amp;gt; 342         return _load(spec)
+    343 
+
+
+ImportError: DLL load failed: Le module spécifié est introuvable.
+
+
+During handling of the above exception, another exception occurred:
+
+
+ImportError                               Traceback (most recent call last)
+
+&amp;lt;ipython-input-1-5ea659dcf2be&amp;gt; in &amp;lt;module&amp;gt;
+      1 # Tensorflow and tf.keras
+----&amp;gt; 2 import tensorflow as tf
+      3 from tensorflow import keras
+      4 
+      5 # Helper libraries
+
+
+~\Anaconda3\lib\site-packages\tensorflow\__init__.py in &amp;lt;module&amp;gt;
+     39 import sys as _sys
+     40 
+---&amp;gt; 41 from tensorflow.python.tools import module_util as _module_util
+     42 from tensorflow.python.util.lazy_loader import LazyLoader as _LazyLoader
+     43 
+
+
+~\Anaconda3\lib\site-packages\tensorflow\python\__init__.py in &amp;lt;module&amp;gt;
+     48 import numpy as np
+     49 
+---&amp;gt; 50 from tensorflow.python import pywrap_tensorflow
+     51 
+     52 # Protocol buffers
+
+
+~\Anaconda3\lib\site-packages\tensorflow\python\pywrap_tensorflow.py in &amp;lt;module&amp;gt;
+     67 for some common reasons and solutions.  Include the entire stack trace
+     68 above this error message when asking for help.&amp;quot;&amp;quot;&amp;quot; % traceback.format_exc()
+---&amp;gt; 69   raise ImportError(msg)
+     70 
+     71 # pylint: enable=wildcard-import,g-import-not-at-top,unused-import,line-too-long
+
+
+ImportError: Traceback (most recent call last):
+  File &amp;quot;C:\Users\saif\Anaconda3\lib\site-packages\tensorflow\python\pywrap_tensorflow.py&amp;quot;, line 58, in &amp;lt;module&amp;gt;
+    from tensorflow.python.pywrap_tensorflow_internal import *
+  File &amp;quot;C:\Users\saif\Anaconda3\lib\site-packages\tensorflow\python\pywrap_tensorflow_internal.py&amp;quot;, line 28, in &amp;lt;module&amp;gt;
+    _pywrap_tensorflow_internal = swig_import_helper()
+  File &amp;quot;C:\Users\saif\Anaconda3\lib\site-packages\tensorflow\python\pywrap_tensorflow_internal.py&amp;quot;, line 24, in swig_import_helper
+    _mod = imp.load_module(&#39;_pywrap_tensorflow_internal&#39;, fp, pathname, description)
+  File &amp;quot;C:\Users\saif\Anaconda3\lib\imp.py&amp;quot;, line 242, in load_module
+    return load_dynamic(name, filename, file)
+  File &amp;quot;C:\Users\saif\Anaconda3\lib\imp.py&amp;quot;, line 342, in load_dynamic
+    return _load(spec)
+ImportError: DLL load failed: Le module spécifié est introuvable.
+
+
+Failed to load the native TensorFlow runtime.
+
+See https://www.tensorflow.org/install/errors
+
+for some common reasons and solutions.  Include the entire stack trace
+above this error message when asking for help.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;import-the-fashion-mnist-dataset&#34;&gt;Import the Fashion MNIST dataset&lt;/h3&gt;
+&lt;p&gt;This guide uses the Fashion MNIST dataset which contains 70,000 grayscale images in 10 categories. The images show individual articles of cloting at low resolution (28 by 28 pixels).
+Here 60,0000 images are used to train the network and 10,000 images to evaluate how accurately the network learned to classify images.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;fashion_mnist = keras.datasets.fashion_mnist
+(train_images, train_labels), (test_images, test_labels) = fashion_mnist.load_data()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;Downloading data from https://storage.googleapis.com/tensorflow/tf-keras-datasets/train-labels-idx1-ubyte.gz
+32768/29515 [=================================] - 0s 0us/step
+Downloading data from https://storage.googleapis.com/tensorflow/tf-keras-datasets/train-images-idx3-ubyte.gz
+26427392/26421880 [==============================] - 1s 0us/step
+Downloading data from https://storage.googleapis.com/tensorflow/tf-keras-datasets/t10k-labels-idx1-ubyte.gz
+8192/5148 [===============================================] - 0s 0us/step
+Downloading data from https://storage.googleapis.com/tensorflow/tf-keras-datasets/t10k-images-idx3-ubyte.gz
+4423680/4422102 [==============================] - 0s 0us/step
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Loading the dataset returns four NumPy arrays:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;code&gt;train_images&lt;/code&gt; and &lt;code&gt;train_labels&lt;/code&gt; arrays are the &lt;em&gt;training&lt;/em&gt; set&lt;/li&gt;
+&lt;li&gt;The model is tested against the test &lt;em&gt;set&lt;/em&gt;, the &lt;code&gt;test_images&lt;/code&gt; and &lt;code&gt;test_labels&lt;/code&gt; arrays&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The images are 28*28 NumPy arrays, with pixel values ranging from 0 to 255. The labels are an array of integers, ranging from 0 to 0. These correspond to the class of clothing the image represents&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Label&lt;/th&gt;
+&lt;th&gt;Class&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;T-shirt/top&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;Trouser&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;Pullover&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;Dress&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;Coat&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;Sandal&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;6&lt;/td&gt;
+&lt;td&gt;Shirt&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;7&lt;/td&gt;
+&lt;td&gt;Sneaker&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;8&lt;/td&gt;
+&lt;td&gt;Bag&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;9&lt;/td&gt;
+&lt;td&gt;Ankle boot&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Each image is mapped to a single label. Since the class names are not included with the dataset, store them here to use later when plotting the images:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;class_names = [&#39;T-shirt/top&#39;, &#39;Trouser&#39;, &#39;Pullover&#39;, &#39;Dress&#39;, &#39;Coat&#39;,
+               &#39;Sandal&#39;, &#39;Shirt&#39;, &#39;Sneaker&#39;, &#39;Bag&#39;, &#39;Ankle boot&#39;]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;explore-the-data&#34;&gt;Explore the data&lt;/h1&gt;
+&lt;p&gt;The following shows there are 60,000 images in the training set, with each image represented as 28 x 28 pixels&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;train_images.shape
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;(60000, 28, 28)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Likewise, there are 60,000 labels in the training set:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;len(train_labels)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;60000
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Each label is an integer between 0 and 9:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;train_labels
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;array([9, 0, 0, ..., 3, 0, 5], dtype=uint8)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;There are 10,000 images in the test set. Again, each image is represented as 28 x 28 pixels:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;test_images.shape
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;(10000, 28, 28)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And the test set contains 10,000 images labels:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;len(test_labels)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;10000
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h1 id=&#34;preprocess-the-data&#34;&gt;Preprocess the data&lt;/h1&gt;
+&lt;p&gt;The data must be preprocessed before training the network. If you inspect the first image in the training set, you will see that the pixel values fall in the range of 0 to 255:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;plt.figure()
+plt.imshow(train_images[0])
+plt.colorbar()
+plt.grid(False)
+plt.show()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;./index_20_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Scale these values to a range of 0 to 1 before feeding them to the neural network model. To do so, divide the values by 255. It&amp;rsquo;s important that the training set and the testing set be preprocessed in the same way:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;train_images = train_images / 255.0
+test_images = test_images / 255.0
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To verify that the data is in the correct format and that you&amp;rsquo;re ready to build and train the network, let&amp;rsquo;s display the first 25 images from the training set and display the class name below each image&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;plt.figure(figsize=(10,10))
+for i in range(25):
+    plt.subplot(5,5,i+1)
+    plt.xticks([])
+    plt.yticks([])
+    plt.grid(False)
+    plt.imshow(train_images[i], cmap=plt.cm.binary)
+    plt.xlabel(class_names[train_labels[i]])
+plt.show()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;./index_24_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;build-the-model&#34;&gt;Build the model&lt;/h1&gt;
+&lt;p&gt;Building the neural network requires configuring the layers of the model, then compiling the model&lt;/p&gt;
+&lt;h2 id=&#34;set-up-the-layers&#34;&gt;Set up the layers&lt;/h2&gt;
+&lt;p&gt;The basic building block of a neural network is the layer. Layers extract representations from the data fed into them.
+Most of deep learning consists of chaining together simple layers. Most layers, such as &lt;code&gt;tf.keras.layers.Dense&lt;/code&gt;, have parameters that are learned during training.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;model = keras.Sequential([
+    keras.layers.Flatten(input_shape=(28,28)),
+    keras.layers.Dense(128, activation=&#39;relu&#39;),
+    keras.layers.Dense(10)
+])
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The first layer in this network, &lt;code&gt;tf.keras.layers.Flatten&lt;/code&gt;, transforms the format of the images from a two dimensional array (of 28 by 28 pixels) to a one-dimensional array (of 28 * 28 = 784 pixels). Think of this layer as unstacking rows of pixels in the image and lining them up. This layer has no parameters to learn, it only reformats the data.
+After the pixels are flattened, the network consists of a sequence of two &lt;code&gt;tf.keras.layers.Dense&lt;/code&gt; layers. These are densely connected, or fully connected, neural layers. The first &lt;code&gt;Dense&lt;/code&gt; layer has 128 nodes (or neurones). The second (and last) layer returns a logits array with legth of 10. Each node contains a score that indicates the current image belongs to one of the 10 classes.&lt;/p&gt;
+&lt;h2 id=&#34;complie-the-model&#34;&gt;Complie the model&lt;/h2&gt;
+&lt;p&gt;Before the model is ready for training, it needs a few more settings. These are added during the model&amp;rsquo;s compile step:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Loss function&lt;/strong&gt;: This measures how accurate the model is during the training. You want to minimize this function to &amp;ldquo;steer&amp;rdquo; the model in the right direction&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Optimize&lt;/strong&gt;: This is ho the model is updated based on the data it sees and its loss function&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Metrics&lt;/strong&gt;: Used to monitor the training and testing steps. The following example uses &lt;em&gt;accuracy&lt;/em&gt;, the fraction of the images  that are correctly classified.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;model.compile(optimizer=&#39;adam&#39;,
+             loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
+             metrics=[&#39;accuracy&#39;])
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;train-the-model&#34;&gt;Train the model&lt;/h2&gt;
+&lt;p&gt;Training the neural network model requires the following steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Feed the training data to the model. In this example, the training data is in the &lt;code&gt;train_images&lt;/code&gt; and &lt;code&gt;train_labels&lt;/code&gt; arrays&lt;/li&gt;
+&lt;li&gt;The model learns to associate images and labels&lt;/li&gt;
+&lt;li&gt;You ask the model to make predictions about a tes set (in this example, the &lt;code&gt;test_images&lt;/code&gt; array)&lt;/li&gt;
+&lt;li&gt;Verify that predictions match the labels from the &lt;code&gt;test_labels&lt;/code&gt; array&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;feed-the-mdel&#34;&gt;Feed the mdel&lt;/h3&gt;
+&lt;p&gt;To start training, call the &lt;code&gt;model.fit&lt;/code&gt; method&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;model.fit(train_images, train_labels, epochs=10)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;Train on 60000 samples
+Epoch 1/10
+60000/60000 [==============================] - 3s 56us/sample - loss: 0.4985 - accuracy: 0.8241
+Epoch 2/10
+60000/60000 [==============================] - 3s 51us/sample - loss: 0.3762 - accuracy: 0.8648
+Epoch 3/10
+60000/60000 [==============================] - 3s 54us/sample - loss: 0.3355 - accuracy: 0.8773
+Epoch 4/10
+60000/60000 [==============================] - 3s 52us/sample - loss: 0.3149 - accuracy: 0.8838
+Epoch 5/10
+60000/60000 [==============================] - 3s 50us/sample - loss: 0.2966 - accuracy: 0.8911
+Epoch 6/10
+60000/60000 [==============================] - 3s 53us/sample - loss: 0.2794 - accuracy: 0.8969
+Epoch 7/10
+60000/60000 [==============================] - 3s 51us/sample - loss: 0.2683 - accuracy: 0.9006
+Epoch 8/10
+60000/60000 [==============================] - 3s 52us/sample - loss: 0.2571 - accuracy: 0.9032
+Epoch 9/10
+60000/60000 [==============================] - 3s 53us/sample - loss: 0.2479 - accuracy: 0.9079
+Epoch 10/10
+60000/60000 [==============================] - 3s 50us/sample - loss: 0.2370 - accuracy: 0.9119
+
+
+
+
+
+&amp;lt;tensorflow.python.keras.callbacks.History at 0x22bf3aaa248&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;As the model trains, the loss and accuracy metrics are displayed. This model reaches an accuracy of about 0.91 ont the training data&lt;/p&gt;
+&lt;h3 id=&#34;evaluate-accuracy&#34;&gt;Evaluate accuracy&lt;/h3&gt;
+&lt;p&gt;Next, compare how the model performs on the test dataset:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;test_loss, test_acc = model.evaluate(test_images, test_labels, verbose = 2)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;10000/10000 - 0s - loss: 0.3402 - accuracy: 0.8807
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;It turns out that the accuracy on the test dataset is a little less than the accuracy on the training dataset. This gap between training accuracy and test accuracy represents overfitting. Overfitting happens when a machine learning model performs worse on new, previously unseen inputs that it does on the training data. An overfitted model &amp;ldquo;memorizes&amp;rdquo; the noise and details in the training dataset to a point where it negatively impacts the performance of the model on the new data.&lt;/p&gt;
+&lt;h3 id=&#34;make-preditions&#34;&gt;Make preditions&lt;/h3&gt;
+&lt;p&gt;Once the model is trained, we can use it to make predictions about some images. We attach a sotmax layer to convert the logits to probabilities, whch are easier to interpret.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;probability_model = tf.keras.Sequential([model,
+                                        tf.keras.layers.Softmax()])
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;predictions = probability_model.predict(test_images)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here, the model has predicted the label for each image in the testing set. Let&amp;rsquo;s take a look at the first prediction:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;predictions[0]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;array([4.7376286e-10, 4.1785884e-11, 1.0244653e-09, 4.7934031e-13,
+       7.8960101e-09, 4.1338499e-04, 4.5091014e-07, 2.3938799e-03,
+       1.2441374e-08, 9.9719232e-01], dtype=float32)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;A prediction is an array of 10 numbers. They represent the model&amp;rsquo;s confidence that the image corresponds to each of the 10 different classes pf clothing. We can identify which labe has the highest confidence value:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;np.argmax(predictions[0])
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;9
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;So, the model is most confident that this image correspond to the class 9. In order to verify the the prediction, we can examine the real label in the test data set&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;test_labels[0]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;9
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now, we can verify the different class prediction by plotting the articles with the predicted probabilities for corresponding to the differents classes&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def plot_image(i, predictions_array, true_label, img):
+    predictions_array, true_label, img = predictions_array, true_label[i], img[i]
+    plt.grid(False)
+    plt.xticks([])
+    plt.yticks([])
+    
+    plt.imshow(img, cmap = plt.cm.binary)
+    
+    predicted_label = np.argmax(predictions_array)
+    if predicted_label == true_label:
+        color = &#39;blue&#39;
+    else:
+        color = &#39;red&#39;
+        
+    plt.xlabel(&amp;quot;{} {:2.0f}% ({})&amp;quot;.format(class_names[predicted_label],
+                                100*np.max(predictions_array),
+                                class_names[true_label]),
+                                color=color)
+    
+def plot_value_array(i, predictions_array, true_label):
+    predictions_array, true_label = predictions_array, true_label[i]
+    plt.grid(False)
+    plt.xticks(range(10))
+    plt.yticks([])
+    thisplot = plt.bar(range(10), predictions_array, color=&amp;quot;#777777&amp;quot;)
+    plt.ylim([0,1])
+    predicted_label = np.argmax(predictions_array)
+    
+    thisplot[predicted_label].set_color(&#39;red&#39;)
+    thisplot[true_label].set_color(&#39;blue&#39;)
+     
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;verify-predictions&#34;&gt;Verify predictions&lt;/h3&gt;
+&lt;p&gt;We can use the trained model to make predictions about some images.
+Let&amp;rsquo;s plot some images predictions and prediction array. Correct prediction laels are blue and incorrect prediction labels are red. The number gives the percentage of the predicted label.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;i = 10
+plt.figure(figsize=(6,3))
+plt.subplot(1,2,1)
+plot_image(i, predictions[i], test_labels, test_images)
+plt.subplot(1,2,2)
+plot_value_array(i, predictions[i], test_labels)
+plt.show
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;function matplotlib.pyplot.show(*args, **kw)&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;./index_48_1.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s plot several images with their predictions. We notice that the model can be wrong even when very confident&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# Plot the first X test images, their predicted labels, and the true labels.
+# Color correct predictions in blue and incorrect predictions in red.
+num_rows = 5
+num_cols = 3
+num_images = num_rows*num_cols
+plt.figure(figsize=(2*2*num_cols, 2*num_rows))
+for i in range(num_images):
+  plt.subplot(num_rows, 2*num_cols, 2*i+1)
+  plot_image(i, predictions[i], test_labels, test_images)
+  plt.subplot(num_rows, 2*num_cols, 2*i+2)
+  plot_value_array(i, predictions[i], test_labels)
+plt.tight_layout()
+plt.show()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;./index_50_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;use-the-trained-model&#34;&gt;Use the trained model&lt;/h2&gt;
+&lt;p&gt;Finally, we can use the trained model to make a prediction about a single image&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# Take an image from the test dataset
+img = test_images[1]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;tf.keras models are optimized to make predictions on a batch, or collection, of examples at once. Accordingly, even though you are using a single image you need to add it to a list&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# Add the image to a batch where it is the only member
+img = (np.expand_dims(img,0))
+print(img.shape)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;(1, 28, 28)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now predict the correct label for this image&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;predictions_single = probability_model.predict(img)
+print(predictions_single)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;[[8.9977939e-06 5.5037474e-13 9.9878293e-01 2.8940199e-14 9.9826534e-04
+  2.8661677e-11 2.0977325e-04 4.3083792e-17 1.6156602e-10 1.0528947e-15]]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;plot_value_array(1, predictions_single[0], test_labels)
+_ = plt.xticks(range(10), class_names, rotation=45)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;./index_57_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;keras.Model.predict&lt;/code&gt; returns a list of lists - one list for each image in the batch of data. Grab the predictions for our (only) image in the batch&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;np.argmax(predictions_single[0])
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Writing technical content in Academic</title>
-      <link>/post/writing-technical-content/</link>
+      <link>/post-old/writing-technical-content/</link>
       <pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>/post/writing-technical-content/</guid>
+      <guid>/post-old/writing-technical-content/</guid>
       <description>&lt;p&gt;Academic is designed to give technical content creators a seamless experience. You can focus on the content and Academic handles the rest.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Highlight your code snippets, take notes on math classes, and draw diagrams from textual representation.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;On this page, you&amp;rsquo;ll find some examples of the types of technical content that can be rendered with Academic.&lt;/p&gt;
@@ -256,9 +685,9 @@ A Markdown aside is useful for displaying notices, hints, or definitions to your
     
     <item>
       <title>Display Jupyter Notebooks with Academic</title>
-      <link>/post/jupyter/</link>
+      <link>/post-old/jupyter/</link>
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>/post/jupyter/</guid>
+      <guid>/post-old/jupyter/</guid>
       <description>&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from IPython.core.display import Image
 Image(&#39;https://www.python.org/static/community_logos/python-logo-master-v3-TM-flattened.png&#39;)
 &lt;/code&gt;&lt;/pre&gt;
@@ -305,9 +734,9 @@ date: 2019-09-01
     
     <item>
       <title>Academic: the website builder for Hugo</title>
-      <link>/post/getting-started/</link>
+      <link>/post-old/getting-started/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/post/getting-started/</guid>
+      <guid>/post-old/getting-started/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Create a free website with Academic using Markdown, Jupyter, or RStudio. Choose a beautiful color theme and build anything with the Page Builder - over 40 &lt;em&gt;widgets&lt;/em&gt;, &lt;em&gt;themes&lt;/em&gt;, and &lt;em&gt;language packs&lt;/em&gt; included!&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://academic-demo.netlify.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Check out the latest &lt;strong&gt;demo&lt;/strong&gt;&lt;/a&gt; of what you&amp;rsquo;ll get in less than 10 minutes, or 
@@ -449,9 +878,9 @@ date: 2019-09-01
     
     <item>
       <title>Hello R Markdown</title>
-      <link>/post/2015-07-23-r-rmarkdown/</link>
+      <link>/post-old/2015-07-23-r-rmarkdown/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      <guid>/post/2015-07-23-r-rmarkdown/</guid>
+      <guid>/post-old/2015-07-23-r-rmarkdown/</guid>
       <description>
 
 
