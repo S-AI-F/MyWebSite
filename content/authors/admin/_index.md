@@ -1,7 +1,7 @@
 ---
 authors:
 - admin
-bio: My research interests include Artificial intelligence products designing and deployement.
+bio: My research interests include Artificial intelligence and data products designing and deployement.
 education:
   courses:
   - course: PhD in Computational Geography

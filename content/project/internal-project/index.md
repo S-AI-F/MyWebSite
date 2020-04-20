@@ -1,31 +1,21 @@
 ---
 date: "2016-04-27T00:00:00Z"
-external_link: ""
+external_link: http://127.0.0.1:4321/project/internal-project/
 image:
-  caption: Photo by rawpixel on Unsplash
-  focal_point: Smart
 links:
 - icon: twitter
   icon_pack: fab
   name: Follow
   url: https://twitter.com/georgecushen
 slides: example
-summary: An example of using the in-built project page.
+summary: MobRISK a model for assessing the exposure of road users to flash flood events
 tags:
-- Deep Learning
-title: Internal Project
+- Data Science
+title: MobRisk
 url_code: ""
 url_pdf: ""
 url_slides: ""
 url_video: ""
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
-
-Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.
-
-Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.
-
-Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.
-
-Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.
+Recent flash flood impact studies highlight that road networks are often disrupted due to adverse weather and flash flood events. Road users are thus particularly exposed to road flooding during their daily mobility. Previous exposure studies, however, do not take into consideration population mobility. Recent advances in transportation research provide an appropriate framework for simulating individual travel-activity patterns using an activity-based approach. These activity-based mobility models enable the prediction of the sequence of activities performed by individuals and locating them with a high spatial–temporal resolution. This paper describes the development of the MobRISK microsimulation system: a model for assessing the exposure of road users to extreme hydrometeorological events. MobRISK aims at providing an accurate spatiotemporal exposure assessment by integrating travel-activity behaviors and mobility adaptation with respect to weather disruptions. The model is applied in a flash-flood-prone area in southern France to assess motorists' exposure to the September 2002 flash flood event. The results show that risk of flooding mainly occurs in principal road links with considerable traffic load. However, a lag time between the timing of the road submersion and persons crossing these roads contributes to reducing the potential vehicle-related fatal accidents. It is also found that sociodemographic variables have a significant effect on individual exposure. Thus, the proposed model demonstrates the benefits of considering spatiotemporal dynamics of population exposure to flash floods and presents an important improvement in exposure assessment methods. Such improved characterization of road user exposures can present valuable information for flood risk management services.
