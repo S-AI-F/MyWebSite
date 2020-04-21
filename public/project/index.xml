@@ -5,12 +5,28 @@
     <link>/project/</link>
       <atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 10 Apr 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu0048655082f540318b627fb11546f8b4_9802_512x512_fill_lanczos_center_2.png</url>
       <title>Projects</title>
       <link>/project/</link>
     </image>
+    
+    <item>
+      <title>Computer vision tutorial with Keras and R</title>
+      <link>/project/computer-vision-keras-r/</link>
+      <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/project/computer-vision-keras-r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Remote Sensing Images Analysis</title>
+      <link>/project/remote-sensing-image-analysis/</link>
+      <pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/project/remote-sensing-image-analysis/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>MobRisk</title>
@@ -19,14 +35,6 @@
       <guid>/project/internal-project/</guid>
       <description>&lt;p&gt;Recent flash flood impact studies highlight that road networks are often disrupted due to adverse weather and flash flood events. Road users are thus particularly exposed to road flooding during their daily mobility. Previous exposure studies, however, do not take into consideration population mobility. Recent advances in transportation research provide an appropriate framework for simulating individual travel-activity patterns using an activity-based approach. These activity-based mobility models enable the prediction of the sequence of activities performed by individuals and locating them with a high spatial–temporal resolution. This paper describes the development of the MobRISK microsimulation system: a model for assessing the exposure of road users to extreme hydrometeorological events. MobRISK aims at providing an accurate spatiotemporal exposure assessment by integrating travel-activity behaviors and mobility adaptation with respect to weather disruptions. The model is applied in a flash-flood-prone area in southern France to assess motorists&amp;rsquo; exposure to the September 2002 flash flood event. The results show that risk of flooding mainly occurs in principal road links with considerable traffic load. However, a lag time between the timing of the road submersion and persons crossing these roads contributes to reducing the potential vehicle-related fatal accidents. It is also found that sociodemographic variables have a significant effect on individual exposure. Thus, the proposed model demonstrates the benefits of considering spatiotemporal dynamics of population exposure to flash floods and presents an important improvement in exposure assessment methods. Such improved characterization of road user exposures can present valuable information for flood risk management services.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Remote Sensing Images Analysis</title>
-      <link>/project/remote-sensing-image-analysis/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/project/remote-sensing-image-analysis/</guid>
-      <description></description>
     </item>
     
   </channel>

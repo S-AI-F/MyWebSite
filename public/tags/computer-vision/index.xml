@@ -5,7 +5,7 @@
     <link>/tags/computer-vision/</link>
       <atom:link href="/tags/computer-vision/index.xml" rel="self" type="application/rss+xml" />
     <description>Computer Vision</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 10 Apr 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu0048655082f540318b627fb11546f8b4_9802_512x512_fill_lanczos_center_2.png</url>
       <title>Computer Vision</title>
@@ -13,9 +13,17 @@
     </image>
     
     <item>
+      <title>Computer vision tutorial with Keras and R</title>
+      <link>/project/computer-vision-keras-r/</link>
+      <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/project/computer-vision-keras-r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Remote Sensing Images Analysis</title>
       <link>/project/remote-sensing-image-analysis/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate>
       <guid>/project/remote-sensing-image-analysis/</guid>
       <description></description>
     </item>

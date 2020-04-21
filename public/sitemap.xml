@@ -28,6 +28,31 @@
   </url>
   
   <url>
+    <loc>/tags/computer-vision/</loc>
+    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/computer-vision-keras-r/</loc>
+    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/deep-learning/</loc>
+    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/</loc>
+    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/post-old/my-first-post/</loc>
     <lastmod>2020-04-06T17:20:08+02:00</lastmod>
   </url>
@@ -35,6 +60,11 @@
   <url>
     <loc>/post/</loc>
     <lastmod>2020-04-06T17:20:08+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/remote-sensing-image-analysis/</loc>
+    <lastmod>2020-03-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -88,11 +118,6 @@
   </url>
   
   <url>
-    <loc>/tags/</loc>
-    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/post-old/jupyter/</loc>
     <lastmod>2019-09-05T00:00:00+00:00</lastmod>
   </url>
@@ -123,27 +148,12 @@
   </url>
   
   <url>
-    <loc>/tags/computer-vision/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/data-science/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/project/internal-project/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/project/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/project/remote-sensing-image-analysis/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url>
   
