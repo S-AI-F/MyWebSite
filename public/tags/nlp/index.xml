@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Deep Learning | Saif Shabou</title>
-    <link>/tags/deep-learning/</link>
-      <atom:link href="/tags/deep-learning/index.xml" rel="self" type="application/rss+xml" />
-    <description>Deep Learning</description>
+    <title>NLP | Saif Shabou</title>
+    <link>/tags/nlp/</link>
+      <atom:link href="/tags/nlp/index.xml" rel="self" type="application/rss+xml" />
+    <description>NLP</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 06 May 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu0048655082f540318b627fb11546f8b4_9802_512x512_fill_lanczos_center_2.png</url>
-      <title>Deep Learning</title>
-      <link>/tags/deep-learning/</link>
+      <title>NLP</title>
+      <link>/tags/nlp/</link>
     </image>
     
     <item>
@@ -17,14 +17,6 @@
       <link>/project/natural-language-processing/</link>
       <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
       <guid>/project/natural-language-processing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Computer vision tutorial with Keras and R</title>
-      <link>/project/computer-vision-keras-r/</link>
-      <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>/project/computer-vision-keras-r/</guid>
       <description></description>
     </item>
     
