@@ -7,6 +7,6 @@ tags:
 - Deep Learning
 - Data Science
 - NLP
-title: Natural Language Processing Turorial
+title: Natural Language Processing Tutorial
 ---
 
