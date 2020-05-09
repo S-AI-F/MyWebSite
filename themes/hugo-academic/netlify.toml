@@ -26,3 +26,9 @@
   for = "index.xml"
   [headers.values]
     Content-Type = "application/rss+xml"
+	
+[[plugins]]
+package = "@netlify/plugin-sitemap"
+
+  [plugins.inputs]
+  buildDir = "public"
