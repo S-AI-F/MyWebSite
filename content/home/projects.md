@@ -30,8 +30,8 @@ subtitle = ""
     tag = "Deep Learning"
   
   [[content.filter_button]]
-    name = "Other"
-    tag = "Demo"
+    name = "Geo-spatial"
+    tag = "Geo-spatial"
   
   [[content.filter_button]]
     name = "Computer Vision"

@@ -18,36 +18,36 @@ subtitle = ""
   icon = "r-project"
   icon_pack = "fab"
   name = "R"
-  description = "90%"
+  description = "Expert"
   
 [[feature]]
   icon = "python"
   icon_pack = "fab"
   name = "python"
-  description = "80%"
+  description = "Intermediate"
   
 [[feature]]
   icon = "chart-line"
   icon_pack = "fas"
   name = "Statistics"
-  description = "100%" 
+  description = "Senior" 
 
 [[feature]]
   icon = "database"
   icon_pack = "fas"
   name = "Database (SQL,Nosql)"
-  description = "100%" 
+  description = "Senior" 
   
 [[feature]]
   icon = "music"
   icon_pack = "fas"
   name = "Music"
-  description = "80%"
+  description = "Expert"
   
 [[feature]]
   icon = "users"
   icon_pack = "fas"
   name = "Management"
-  description = "80%"
+  description = "Intermediate"
 
 +++

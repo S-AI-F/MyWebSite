@@ -1,0 +1,12 @@
+cd /d D:\
+cd blog
+cd AcademicWebsite
+git status
+git add .
+git commit -m "NLP project"
+git remote -v
+git branch nlp-project
+git checkout nlp-project
+git add .
+git commit -m "NLP project"
+git push origin nlp-project

@@ -21,6 +21,22 @@
     </item>
     
     <item>
+      <title>Open Data Book</title>
+      <link>/project/open-data-book/</link>
+      <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
+      <guid>/project/open-data-book/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Open Geo KPI</title>
+      <link>/project/open-geo-kpi/</link>
+      <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
+      <guid>/project/open-geo-kpi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Computer vision tutorial with Keras and R</title>
       <link>/project/computer-vision-keras-r/</link>
       <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>

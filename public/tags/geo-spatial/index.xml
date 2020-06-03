@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Geo-spatial | Saif Shabou</title>
+    <link>/tags/geo-spatial/</link>
+      <atom:link href="/tags/geo-spatial/index.xml" rel="self" type="application/rss+xml" />
+    <description>Geo-spatial</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 06 May 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0048655082f540318b627fb11546f8b4_9802_512x512_fill_lanczos_center_2.png</url>
+      <title>Geo-spatial</title>
+      <link>/tags/geo-spatial/</link>
+    </image>
+    
+    <item>
+      <title>Open Data Book</title>
+      <link>/project/open-data-book/</link>
+      <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
+      <guid>/project/open-data-book/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Open Geo KPI</title>
+      <link>/project/open-geo-kpi/</link>
+      <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
+      <guid>/project/open-geo-kpi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Remote Sensing Images Analysis</title>
+      <link>/project/remote-sensing-image-analysis/</link>
+      <pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/project/remote-sensing-image-analysis/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
