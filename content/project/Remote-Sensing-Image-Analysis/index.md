@@ -5,6 +5,8 @@ image:
 summary: Satellite imagery analysis:image processing, index generation, image segmentation, and image classification. 
 tags: 
 - Computer Vision
+- Data Science
+- Geo-spatial
 title: Remote Sensing Images Analysis
 ---
 

@@ -15,11 +15,11 @@ education:
     year: 2011
 email: ""
 interests:
-- Artificial Intelligence
-- Data science
-- Product management
+- Geo-Data science
+- Data Product management
 - Geospatial Analysis
-- Smart city
+- Urban planning
+- Environmental Science
 name: Saif Shabou
 organizations:
 - name: Freelance
@@ -44,12 +44,21 @@ user_groups:
 - Visitors
 ---
 
-Passionate about Data Science and Product Ownership, I have experience in building and industrializing advanced data science products.
+Geo-Data science | Open Data  | Environmental science | Geo-statistics | Maps | GIS | Geo-spatial Analysis | Geo-visualization
 
-I have strong scientific background (Phd in Geo-science), and I worked on differents data science projects in academia (mobility pattern recognition, decision-making modeling with Bayesian networks, risk assessment...) and startups (Location intelligence, Smart building, IOTs, Data Quality Management and anomaly detection, Data Anonymization…).
+I am a vagabond in the world of hypertext, a specialist in drifting in wikipedia pages and in labyrinths of knowledge. 
+I have spent a large part of my life reading and learning. Whenever, I discover a new field, a concept, a study I find myself obliged to learn all the knowledge necessary to find out more. And since everything is interconnected, I mostly learned to get lost in the complex knowledge networks.
+So I decided to write about what I read, to structure these information, to leave written traces of it and to share my summaries. Hence the genesis of this website.
 
-Interested by the development of data science products within Agile framework organisation, I managed the design, deployment and monitoring of Location Intelligence and smart Building analytics tools within Big Data framework:
-- Defining product roadmap and strategies
-- Feature prioritisation based on client’s needs
-- Specification and industrialisation of data processing modules: data integration, data profiling and cleaning, anomaly detection, data anonymization, aggregation and KPIs measuring, clustering, forecasting, alerting, reporting and data visualisation
-- Documentation and communication about product features
+I am interested in all areas of knowledge. But it is often the spatial dimension that appeals to me. Unconsciously, I try to spatialize everything, to represent the phenomena on a map, to study its geometries, its distances, its projections…
+
+During my studies and work experiences, I explored various facets of space:
+
+- **Architecture and urbanism**: building design, Urban planning, Generative design, Building Iformation Modelling (BIM)
+- **Environmental and Cognitive Psychology**: Spatial cognition, Environmental perception, Mental maps, Decision-making
+- **Social Geography**: Cartography, Socio-environmental systems, Human mobility, Agent-based modelling
+- **Environmental science**: Natural hazards, geophysical modelling, hydro-meteorology, climatology
+- **Geo-statistics**: kriging, Aggregation, Disaggregation, Simulation, Sampling
+- **Geo-Data science and engineering**: Geospatial data collecting and cleaning, Spatial database modelling and data storage, Geo-visualization, Big data frameworks
+
+
