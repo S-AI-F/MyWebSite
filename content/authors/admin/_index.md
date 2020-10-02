@@ -4,7 +4,7 @@ authors:
 bio: My research interests include Artificial intelligence and data products designing and deployement.
 education:
   courses:
-  - course: PhD in Computational Geography
+  - course: PhD in Geo-science
     institution: University of Grenoble
     year: 2016
   - course: MEng in Environmental Psyhology
@@ -15,11 +15,10 @@ education:
     year: 2011
 email: ""
 interests:
-- Geo-Data science
+- Data science
 - Data Product management
 - Geospatial Analysis
-- Urban planning
-- Environmental Science
+- Environmental science
 name: Saif Shabou
 organizations:
 - name: Freelance
@@ -44,21 +43,30 @@ user_groups:
 - Visitors
 ---
 
-Geo-Data science | Open Data  | Environmental science | Geo-statistics | Maps | GIS | Geo-spatial Analysis | Geo-visualization
+Data science | Open Data  | Geo-statistics | GIS | Data Product Management | Machine Learning | Artificial Intelligence 
 
-I am a vagabond in the world of hypertext, a specialist in drifting in wikipedia pages and in labyrinths of knowledge. 
-I have spent a large part of my life reading and learning. Whenever, I discover a new field, a concept, a study I find myself obliged to learn all the knowledge necessary to find out more. And since everything is interconnected, I mostly learned to get lost in the complex knowledge networks.
-So I decided to write about what I read, to structure these information, to leave written traces of it and to share my summaries. Hence the genesis of this website.
+Hello!
 
-I am interested in all areas of knowledge. But it is often the spatial dimension that appeals to me. Unconsciously, I try to spatialize everything, to represent the phenomena on a map, to study its geometries, its distances, its projections…
+I am a Data Specialist. 
 
-During my studies and work experiences, I explored various facets of space:
+I have data science skills, combined with data architecture and engineering knowledge, and data product management experiences.
 
-- **Architecture and urbanism**: building design, Urban planning, Generative design, Building Iformation Modelling (BIM)
-- **Environmental and Cognitive Psychology**: Spatial cognition, Environmental perception, Mental maps, Decision-making
-- **Social Geography**: Cartography, Socio-environmental systems, Human mobility, Agent-based modelling
-- **Environmental science**: Natural hazards, geophysical modelling, hydro-meteorology, climatology
-- **Geo-statistics**: kriging, Aggregation, Disaggregation, Simulation, Sampling
-- **Geo-Data science and engineering**: Geospatial data collecting and cleaning, Spatial database modelling and data storage, Geo-visualization, Big data frameworks
+My goal is to participate in building robust and impactful Data products.
+
+My works are especially related to geo-spatial topics: human mobility, natural disasters, spatial-temporal  dynamics, smart building, urban planning...
+
+I am a continuous learner and an eternal student. I share in this blog some of my personal data projects and tutorials.
+
+My technical stack is:
+
+- **Data Science**: R, Python
+- **IDE**: RStudio, PyCharm, Jupyter
+- **Project Management**: Slack, Azure Devops, Jira, Trello, Github projects
+- **Devops**: Github, Azure, Google Cloud Platform
+- **Reporting**: Shiny, Dash, Plotly, leaflet, Tableau, PowerBI
+- **Database**: SQL Server, PosgreSQL, Cassandra, Hive, MongoDB, BigTable.
+- **App Deployement**: heroku
+- **Continious Integration**
+
 
 

@@ -28,12 +28,17 @@
   </url>
   
   <url>
-    <loc>/post/lost-hypertext/lost-in-hypertext/</loc>
-    <lastmod>2020-06-03T00:00:00+00:00</lastmod>
+    <loc>/post/open-data/open-data/</loc>
+    <lastmod>2020-10-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/post/</loc>
+    <lastmod>2020-10-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/lost-hypertext/lost-in-hypertext/</loc>
     <lastmod>2020-06-03T00:00:00+00:00</lastmod>
   </url>
   
@@ -185,6 +190,11 @@
   <url>
     <loc>/terms/</loc>
     <lastmod>2018-06-28T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/geo-scales/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>

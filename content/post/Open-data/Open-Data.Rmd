@@ -1,0 +1,212 @@
+---
+title: "Lost with Open Data"
+author: "Saif Shabou"
+date: '2020-10-01'
+output: html_document
+featured: true
+image:
+  caption: ""
+  focal_point: ""
+image_preview: 'featured.png'
+---
+
+# Intro
+
+Le mouvement de l’open data m’a toujours fasciné. A chaque fois que je visite les portails d’open data (gouvernements, régions, villes, institutions publiques…), je suis captivé par la richesse du contenu et l’effort fourni pour réunir, organiser et publier toutes ces informations. 
+Par contre, le jour où j’ai eu besoin d’utiliser ces données, j’ai découvert le revers du décors. Il y en a tellement et partout qu’on ne sait plus lesquelles utiliser!
+
+J’ai alors commencé un travail de recensement des principales plateformes fournissant des données publiques tout en explorant leur contenu. J’en retire deux principales conclusions:
+
+- **On peut trouver des données sur à peu près tout ce qu’on veut!**
+- **Il y a tellement de sources, de versions, de portails et de fournisseurs qu’on finit souvent, très souvent, par se perdre!**
+
+Je synthétise dans cet article ce que j'ai retenu de mes dérives dans les plateformes d'Open Data.
+
+# La petite histoire
+
+La légende dit que la définition du concept de données publiques a vu le jour lors de la rencontre de Sébastopol en 2007 qui a réunit des grands activistes de l’Internet dans le but d’inciter les gouvernements dans l’adoption des grands principes de l’Open Government. 
+
+> Je vous vous invite à lire cet [cet  article](http://parisinnovationreview.com/article/une-breve-histoire-de-lopen-data) si l’histoire de l’open data vous intéresse.
+
+Ce mouvement d’ouverture des données a évolué conjointement avec différentes initiatives d’ouverture du contenu et de la connaissance dans des domaines variés:
+
+- Développement logiciel (Mozilla Firefox, Hadoop, Linux, Git, Spark, Docker…)
+- Accès aux connaissances et aux informations (wikipedia, le projet Gutenberg, OpenStreetMap…)
+- Accès aux publications scientifiques (arXiv, OpenEdition)
+- Accès à l’éducation et à des cours d’apprentissage (Openclassroom, wikiversity…)
+
+# Définition
+
+La définition de référence du terme "Open Data", et plus largement de l'Open Coentent", a été établie par  [l’Open Knowledge Foundation](https://okfn.org/). On peut résumer comme suit: “*Open means anyone can freely access, use, modify, and share for any purpose*”. 
+Il ne suffit pas de rendre l'accès publique aux données pour que ces données soients considérées comme "ouvertes". Elles doivent respecter un certain nombre de critères: complétude, accessibilité, gratuité, exploitabilité, permanence.. 
+
+> Les définitions complètes des critères d’ouverture des données sont disponible dans [ce lien](https://opendefinition.org/od/2.1/en/).
+
+# Plateformes et fournisseurs
+
+Pour dresser un petit panorama des plateformes d’open data, je vais focaliser tout d'abord sur celles qui sont produites et générées par des organismes institutionnels à différentes échelles (internationale, nationale, régionale…). Je citerais ensuite d’autres exemples de projets d’open data développés dans le cadre de projets collaboratifs, associatifs ou autre.
+
+## Organismes institutionnels
+
+### Echelle internationale
+
+La grande majorité des données ouvertes à couverture mondiale est publiée par des organismes appartenant à l’Organisation des Nations Unies. Ces organismes fournissent des services d’accès aux statistiques concernant différentes thématiques: démographie, environnement, économie, santé, agriculture, énergie…
+Les données sont accessibles et consultables à travers des bases de données téléchargeables, des APIs et des portails de visualisation. Le tableau ci-dessous liste un extrait des principales plateformes. 
+
+| Fournisseur  | Plateforme/données | Description |
+| :----- |--------|  ---------------- |
+| L’ONU  |  [Undata](http://data.un.org/) |  Service web qui permet l’accès aux différentes statistiques fournies par la division statistique des Nations Unies. |
+| UNESCO   |  [UIS.Stat](http://data.uis.unesco.org/?lang=fr) |  Plateforme centralisant des données concernant l’éducation, la science et la culture. |
+| La Banque Mondiale  |  [World Development indicators](https://donnees.banquemondiale.org/) |  Un ensemble de statistiques et d’indicateurs sur le développement dans le monde (économie, démographie, environnement...). |
+| L’OMS  |  [Global Health Observatory Data](https://www.who.int/data/gho) |  Des indicateurs et statistiques de santé  (maladies, pollution, accès à la santé…) |
+| Food and Agriculture Organisation  |  [Global Health Observatory Data](https://www.who.int/data/gho) |  Des indicateurs et statistiques de santé  (maladies, pollution, accès à la santé…). |
+| World Resources  Institute  |  [Resource Watch, Global Forest Watch, Climate Watch...](https://www.wri.org/resources/data-platforms) |  Le WRI publie différentes données sur l’état des ressources naturelles du monde (climat, forêt, énergie, eau…) |
+| Commission Européenne  |  [Eurostat](https://ec.europa.eu/eurostat/fr/home), [EU OpenData Porta](https://data.europa.eu/euodp/en/home) |  Bases de données fournissant des informations sur les pays européens concernant différentes thématiques (démographie, environnement, énergie, économie, transport…) |
+
+Voici un exemple d'exploration des données de la Banque Mondiale en utilisant le pakage R "wbstats" qui permet d'utiliser facilement l'API associée.
+
+```{r wbdata, include=TRUE, message=FALSE, warning=FALSE}
+library(wbstats)
+library(dplyr)
+library(sf)
+library(rnaturalearthdata)
+library(knitr)
+library(kableExtra)
+library(leaflet)
+
+# Get countries geo-boundaries
+world_geo <- rnaturalearth::ne_countries(scale = 50, returnclass = "sf")
+
+# Get population growth data for the last year (2019)
+pop_data <- wb(country = "countries_only", 
+               indicator = "SP.POP.GROW", 
+               mrv = 1)
+# join geometry with data
+pop_geo <- left_join(world_geo, pop_data, by = c("iso_a2" = "iso2c"))
+
+# show sample of data
+
+kable(pop_data) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"),
+                font_size = 12) %>%
+  scroll_box(width = "100%", height = "400px")
+```
+
+
+```{r wbmap, include=TRUE, message=FALSE, warning=FALSE}
+
+library(leaflet)
+
+pal <- colorNumeric("viridis", domain = pop_geo$value)
+
+labels <- sprintf("<strong>%s</strong><br/>%s: %g%%",
+                  pop_geo$name_long, pop_geo$indicator, round(pop_geo$value, 2)) %>% 
+  lapply(htmltools::HTML)
+
+Map_pop_growth <- leaflet(pop_geo, height = 400, width = "100%") %>%
+  setView(20,25, zoom = 1) %>%
+  addTiles() %>%
+  addPolygons(
+    fillColor = ~pal(value),
+    weight = 1,
+    opacity = 1,
+    color = "grey",
+    fillOpacity = 0.7,
+    label = labels,
+    labelOptions = labelOptions(
+      style = list("font-weight" = "normal", padding = "3px 6px"),
+      textsize = "15px",
+      direction = "auto")) %>%
+  addLegend(pal = pal, values = ~value, opacity = 0.9, 
+            title = NULL,
+            position = "bottomright",
+            labFormat = labelFormat(suffix = "%"))
+
+Map_pop_growth
+```
+
+### Echelle nationale
+
+Dans le cadre des démarches de gouvernement ouvert et de transparence, plusieurs pays ont investi dans la mise en place de politiques d’ouverture de données. L’Open Knowledge Foundation a définit [un indice]((https://index.okfn.org/)) d'évaluation de l’état de l’ouverture des données publiques. 
+
+> La France est classée parmis les les gouvernements leaders en politique d’open data! [(source)]((https://www.etalab.gouv.fr/la-france-de-nouveau-sur-le-podium-de-lopen-data-en-2019)).
+
+La plateforme [data.gouv](https://www.data.gouv.fr/fr/), développée par [Etalab](https://www.etalab.gouv.fr/), est considérée comme la principale plateforme de diffusion de données publiques de l’état français. Les données sont catégorisées selon différentes thématiques: agriculture, culture, économie, environnement, transports… De plus en plus de données sont maintenant accessibles via [des APIs ouvertes](https://api.gouv.fr/): découpage administratif, base d'adresse nationale, base SIRENE...).
+
+Le tableau ci-dessous contient un extrait des principales bases de données publiques par  thématique:
+
+|Thématique | Producteur  | Données | Description |
+| :----- |-------- |--------|  ---------------- |
+| Agriculture  |Le service de la statistique et de la prospective du ministère de l’agriculture |  [GRAPH’AGRI](https://www.data.gouv.fr/fr/datasets/agreste-graphagri/)   | Les statistiques liées à l’agriculture, aux industries agro-alimentairess, population agricole |
+| Communication  | ARCEP |  [GRAPH’AGRI](https://www.data.gouv.fr/fr/datasets/mon-reseau-mobile/)   | Cartographie de la couverture des opérateurs et des mesures de qualité de service réalisées en conditions réelles. |
+| Emploi  | INSEE |  [Banque de Données Macro-économique](https://www.data.gouv.fr/fr/datasets/marche-du-travail/)   | Base de données de séries et indices sur l’ensemble des domaines économiques |
+| Economie  | Ministère de l’économie et des finances |  [Impot locaux](https://www.data.gouv.fr/fr/datasets/impots-locaux/)   | Statistiques sur les impôts locaux |
+| Environnement  | Ministère de la transition écologique et solidaire |  [Entrepôt d’indicateurs et de données sur l’environnement](https://www.data.gouv.fr/fr/datasets/entrepot-d-indicateurs-et-de-donnees-sur-l-environnement-eider/)   | Un entrepôt qui centralise les statistiques sur l'environnement  agrégées à la région et au département. |
+| Foncier  | Ministère de l’économie et de la finance |  [Demandes de valeurs foncières](https://www.data.gouv.fr/fr/datasets/demandes-de-valeurs-foncieres/)   | La base de donnés des transactions immobilières intervenues au cours des 5 dernières années sur le territoire français. |
+| Santé  | Ministère des solidarités et de santé |  [Statistiques annuelles des établissements de santé](https://www.data.gouv.fr/fr/datasets/statistique-annuelle-des-etablissements-de-sante-sae/)   | Indicateurs sur l’activité et les ressources en équipements et en personnels des établissements de santé. |
+| Territoires  | IGN |  [Base Adresse Nationale](https://www.data.gouv.fr/fr/datasets/base-adresse-nationale/) | Elle référence l'intégralité des adresses du territoire français. |
+| Cadastre  | Ministère de l’économie et des finances |  [Plan Cadastre Informatisé](https://cadastre.data.gouv.fr/datasets/plan-cadastral-informatise) | Un assemblage des différentes parcelles cadastrales du territoire |
+
+
+D’autres organismes publiques fournissent des portails d’accès à leurs données:
+
+- [L’INSEE](https://www.insee.fr/fr/statistiques?taille=100&debut=0&collection=4): statistiques officielles de l’emploi, recensement, enquêtes nationales…
+- [L’IGN](https://www.geoportail.gouv.fr/): géoportail, occupation des sols, cartes forestières, réseaux routiers, cadastre…
+- [L’ADEME](https://data.ademe.fr/): Base carbone, indicateurs d’impacts environnementaux (AGRIBALYSE)...
+- [La RATP](https://dataratp.opendatasoft.com/explore/?sort=modified): Offre de transport, trafic des stations...
+- ...
+
+
+### Echelle régionale
+
+Les données ouvertes sont aussi fournies et publiées à travers des plateformes proposées par différentes collectivités territoriales (régions, départements, communes...). La majorité des régions française ont investi dans des portails  d’open data tels que la région ile de France, la Bretagne, Auvergne-Rhône-Alpes, Grand-Est… Le portail open data de la région ile de France, par exemple, compte environ 780 jeux de données dans 17 thématiques différentes (pistes cyclables, horaires des lignes de transport, jardins et parcs, qualité d’air…).
+
+On retrouve aussi portails d’open data à l’échelle des villes et des métropoles tels que Paris, Rennes, Issy-les-moulineaux, Nantes, Grenoble… Paris Data, par exemple,  contient 275 jeux de données sur 7 thématiques tels que la localisation des stations Velib, les terrasses, les toilettes publiques, les stationnements, les fontaines à boire, le comptage routier et vélo…
+
+```{r echo=FALSE}
+knitr::include_url("http://umap.openstreetmap.fr/fr/map/odservatoire_256503#6/45.813/5.603")
+```
+
+> Ceyye carte interactive des acteurs de l'open data territorial est produite par [l'observatoire de l'open data des territoires](http://www.observatoire-opendata.fr/)
+
+Le développement de ces plateformes a été facilité grâce àd ifférentes initiatives publiques et privées pour accompagner les collectivités locales dans leurs projets d'ouvertue des données: [OpenDataFrance](http://www.opendatafrance.net/), [OpenDataSoft](https://www.opendatasoft.com/), [Publidata](https://www.publidata.io/), [Datactivist](https://datactivist.coop/fr/), [Datapublica](https://www.data-publica.eu/)...
+
+## Organismes non-institutionnels
+
+Même si le mouvement d’open data concernait au début les gouvernements, des collectifs et des entreprises privées participent à la mise à disposition des données de différentes manières:
+
+- Google propose un moteur de recherche de données ouvertes: [Google dataset search](https://datasetsearch.research.google.com/)
+- Kaggle met à disposition des données à utiliser dans les challenge de data science: [Kaggle Datasets](https://www.kaggle.com/datasets)
+- Différentes données géo-spatiales sont fournies par [Uber](https://movement.uber.com/cities?lang=fr-FR), [Carto](https://carto.com/spatial-data-catalog/), [ArcGis](https://hub.arcgis.com/search)...
+
+# Usages
+
+## Les points positifs
+
+En plus du soucis de transparence, l’ouverture des données a permis et facilité le développement de différents services et applications dans différents domaines.
+
+Plusieurs acteurs de l'imobilier (tels que Meilleurs Agents, Price Hubble, GeoFoncier...) exploitent par exemple la base de données des valeurs foncières pour proposer des outils d’estimations des prix des biens. La base de données des équipements est aussi utilisée par des sites d’annonces immobilières (se loger, bienIcie, cityscan…) ou à des fins de géomarketing (GeoCible), pour caractériser le contexte géographique des biens.
+
+ Le développement d’une plateforme dédiée à la publication [des données de transport](https://transport.data.gouv.fr/) a aussi permi le développement de plusieurs services autour des systèmes d’informations multimodaux comme: Cityway, viaTransit, MyBus, Parkingmap…
+
+Et plus récemment, plusieurs tableaux de bords ont été produits pour suivre l’évolution de l'épidémie du covid-19 grâce à la publication [des statistiques](https://www.data.gouv.fr/fr/datasets/donnees-des-urgences-hospitalieres-et-de-sos-medecins-relatives-a-lepidemie-de-covid-19/) de détection et d'hospitalisation par Santé Publique France.
+
+
+## Les points négatifs
+
+Comme vous l'avez surement constaté dans cet article, il y a tellement d'acteurs, de fournisseurs, de plateformes et de portails d'open data qu'il est devenu compliqué de s'y retrouver.
+
+Cet article présente une tout petit panorama du monde de l'open data, mais on peut facilement se perdre dans les différents rapports et plateformes. 
+
+Peut être un jour on aura un seul portail d'accès aux données ouvertes?
+
+<img src="/img/lost_image.png" alt="Kitten"
+	title="Lost with open data" width="100%"  />
+
+
+> Vous pouvez visitez mes autres travaux en cours sur l'open data ici:
+
+- https://s-ai-f.github.io/Open-Data-Book/
+- https://saifgeodata.shinyapps.io/OpenGeoKPI-Europe-App/
+- https://s-ai-f.github.io/Open-Data-Report-France/
+

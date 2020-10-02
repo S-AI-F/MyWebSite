@@ -53,6 +53,27 @@
     </item>
     
     <item>
+      <title>GeoScales</title>
+      <link>/project/geo-scales/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/project/geo-scales/</guid>
+      <description>&lt;p&gt;GeoScales is a tool that enables an easy and unique access to geospatial open data provided in different scales.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://app.gitbook.com/@saif-shabou/s/geoscales-doc/~/drafts/-MHWwoAvSWL1iCYxjX_9/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Doc&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://github.com/S-AI-F/GeoScalesApp&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;App Source Code&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://github.com/S-AI-F/GeoScalesData&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Data processing source code&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://geoscalesapp.herokuapp.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;App online&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://dashboard.heroku.com/apps/geoscalesapp/deploy/github&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;App deployement&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>MobRisk</title>
       <link>/project/internal-project/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>

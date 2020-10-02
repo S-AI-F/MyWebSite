@@ -7,13 +7,12 @@ links:
   icon_pack: fab
   name: Follow
   url: https://twitter.com/georgecushen
-slides: example
 summary: MobRISK a model for assessing the exposure of road users to flash flood events
 tags:
 - Data Science
-title: MobRisk
-url_code: ""
-url_pdf: ""
+- Geo-spatial
+title: MobRisk 
+url_code: "https://sourcesup.renater.fr/www/mobrisk/"
 url_slides: ""
 url_video: ""
 ---
