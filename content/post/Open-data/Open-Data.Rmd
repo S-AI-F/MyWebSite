@@ -7,7 +7,11 @@ featured: true
 image:
   caption: ""
   focal_point: ""
-image_preview: 'featured.png'
+image_preview: 'lost_image.png'
+header:
+  image: "lost_image.png"
+  caption: "Image Source: Carol and Mike Werner / Alamy/Alamy"
+
 ---
 
 # Intro
@@ -63,7 +67,7 @@ Les données sont accessibles et consultables à travers des bases de données t
 | World Resources  Institute  |  [Resource Watch, Global Forest Watch, Climate Watch...](https://www.wri.org/resources/data-platforms) |  Le WRI publie différentes données sur l’état des ressources naturelles du monde (climat, forêt, énergie, eau…) |
 | Commission Européenne  |  [Eurostat](https://ec.europa.eu/eurostat/fr/home), [EU OpenData Porta](https://data.europa.eu/euodp/en/home) |  Bases de données fournissant des informations sur les pays européens concernant différentes thématiques (démographie, environnement, énergie, économie, transport…) |
 
-Voici un exemple d'exploration des données de la Banque Mondiale en utilisant le pakage R "wbstats" qui permet d'utiliser facilement l'API associée.
+Voici un exemple d'exploration des données de la Banque Mondiale en utilisant le pakage R [wbstats](http://nset-ornl.github.io/wbstats/).
 
 ```{r wbdata, include=TRUE, message=FALSE, warning=FALSE}
 library(wbstats)
@@ -195,10 +199,6 @@ Comme vous l'avez surement constaté dans cet article, il y a tellement d'acteur
 Cet article présente une tout petit panorama du monde de l'open data, mais on peut facilement se perdre dans les différents rapports et plateformes. 
 
 Peut être un jour on aura un seul portail d'accès aux données ouvertes?
-
-<img src="/img/lost_image.png" alt="Kitten"
-	title="Lost with open data" width="100%"  />
-
 
 > Vous pouvez visitez mes autres travaux en cours sur l'open data ici:
 
