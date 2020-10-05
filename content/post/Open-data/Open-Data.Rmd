@@ -5,13 +5,13 @@ date: '2020-10-01'
 output: html_document
 featured: true
 image:
-  caption: ""
-  focal_point: ""
-image_preview: 'lost_image.png'
+  placement: 1
+  focal_point: "Center"
+  preview_only: true
+  caption: "Photo by Carol and Mike Werner / Alamy/Alamy"
 header:
   image: "lost_image.png"
-  caption: "Image Source: Carol and Mike Werner / Alamy/Alamy"
-
+  caption: "Photo by: Carol and Mike Werner / Alamy/Alamy"
 ---
 
 # Intro
