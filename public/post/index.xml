@@ -124,7 +124,7 @@ Les données sont accessibles et consultables à travers des bases de données t
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;Voici un exemple d’exploration des données de la Banque Mondiale en utilisant le pakage R “wbstats” qui permet d’utiliser facilement l’API associée.&lt;/p&gt;
+&lt;p&gt;Voici un exemple d’exploration des données de la Banque Mondiale en utilisant le pakage R &lt;a href=&#34;http://nset-ornl.github.io/wbstats/&#34;&gt;wbstats&lt;/a&gt;.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(wbstats)
 library(dplyr)
 library(sf)
@@ -5325,8 +5325,6 @@ Map_pop_growth&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Comme vous l’avez surement constaté dans cet article, il y a tellement d’acteurs, de fournisseurs, de plateformes et de portails d’open data qu’il est devenu compliqué de s’y retrouver.&lt;/p&gt;
 &lt;p&gt;Cet article présente une tout petit panorama du monde de l’open data, mais on peut facilement se perdre dans les différents rapports et plateformes.&lt;/p&gt;
 &lt;p&gt;Peut être un jour on aura un seul portail d’accès aux données ouvertes?&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/lost_image.png&#34; alt=&#34;Kitten&#34;
-    title=&#34;Lost with open data&#34; width=&#34;100%&#34;  /&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Vous pouvez visitez mes autres travaux en cours sur l’open data ici:&lt;/p&gt;
 &lt;/blockquote&gt;
