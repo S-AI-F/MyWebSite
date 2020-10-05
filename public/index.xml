@@ -171,7 +171,7 @@ Les données sont accessibles et consultables à travers des bases de données t
 &lt;/tr&gt;
 &lt;tr class=&#34;odd&#34;&gt;
 &lt;td align=&#34;left&#34;&gt;Food and Agriculture Organisation&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://www.who.int/data/gho&#34;&gt;Global Health Observatory Data&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;http://www.fao.org/faostat/en/#home&#34;&gt;FAOSTAT&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Des indicateurs et statistiques de santé (maladies, pollution, accès à la santé…).&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr class=&#34;even&#34;&gt;
@@ -207,7 +207,7 @@ pop_geo &amp;lt;- left_join(world_geo, pop_data, by = c(&amp;quot;iso_a2&amp;quo
 
 # show sample of data
 
-kable(head(pop_data)) %&amp;gt;%
+kable(pop_data) %&amp;gt;%
   kable_styling(bootstrap_options = c(&amp;quot;striped&amp;quot;, &amp;quot;hover&amp;quot;, &amp;quot;condensed&amp;quot;, &amp;quot;responsive&amp;quot;),
                 font_size = 12) %&amp;gt;%
   scroll_box(width = &amp;quot;100%&amp;quot;, height = &amp;quot;400px&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
@@ -377,6 +377,4859 @@ AE
 United Arab Emirates
 &lt;/td&gt;
 &lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+ARG
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.9933975
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+AR
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Argentina
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+ARM
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.2015397
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+AM
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Armenia
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+ASM
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+-0.2762308
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+AS
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+American Samoa
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+ATG
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.8603805
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+AG
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Antigua and Barbuda
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+AUS
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.5159845
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+AU
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Australia
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+AUT
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.4125398
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+AT
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Austria
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+AZE
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.8370196
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+AZ
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Azerbaijan
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+BDI
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+3.1289671
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+BI
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Burundi
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+BEL
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.4975850
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+BE
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Belgium
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+BEN
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2.7151054
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+BJ
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Benin
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+BFA
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2.8442226
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+BF
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Burkina Faso
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+BGD
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.0420011
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+BD
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Bangladesh
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+BGR
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+-0.7039056
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+BG
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Bulgaria
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+BHR
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+4.4692390
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+BH
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Bahrain
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+BHS
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.9913359
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+BS
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Bahamas, The
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+BIH
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+-0.6922064
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+BA
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Bosnia and Herzegovina
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+BLR
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+-0.1756485
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+BY
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Belarus
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+BLZ
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.8831107
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+BZ
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Belize
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+BMU
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+-0.0031289
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+BM
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Bermuda
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+BOL
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.3990984
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+BO
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Bolivia
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+BRA
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.7515484
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+BR
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Brazil
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+BRB
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.1338758
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+BB
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Barbados
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+BRN
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.0027373
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+BN
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Brunei Darussalam
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+BTN
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.1463823
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+BT
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Bhutan
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+BWA
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2.1752909
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+BW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Botswana
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+CAF
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.6747452
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+CF
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Central African Republic
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+CAN
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.4240513
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+CA
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Canada
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+CHE
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.7080892
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+CH
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Switzerland
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+CHI
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.0269727
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+JG
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Channel Islands
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+CHL
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.1829804
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+CL
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Chile
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+CHN
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.3572911
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+CN
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+China
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+CIV
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2.5493362
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+CI
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Cote d’Ivoire
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+CMR
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2.5842471
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+CM
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Cameroon
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+COD
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+3.1870863
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+CD
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Congo, Dem. Rep. 
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+COG
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2.5629008
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+CG
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Congo, Rep. 
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+COL
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.3817020
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+CO
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Colombia
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+COM
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2.2058774
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+KM
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Comoros
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+CPV
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.1279243
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+CV
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Cabo Verde
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+CRI
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.9579050
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+CR
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Costa Rica
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+CUB
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+-0.0410646
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+CU
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Cuba
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+CUW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+-1.4256334
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+CW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Curacao
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+CYM
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.1988805
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+KY
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Cayman Islands
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+CYP
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.7797882
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+CY
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Cyprus
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+CZE
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.3735373
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+CZ
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Czech Republic
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+DEU
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.2734511
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+DE
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Germany
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+DJI
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.5151805
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+DJ
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Djibouti
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+DMA
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.2551715
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+DM
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Dominica
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+DNK
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.4291532
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+DK
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Denmark
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+DOM
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.0464605
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+DO
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Dominican Republic
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+DZA
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.9339502
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+DZ
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Algeria
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+ECU
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.6792132
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+EC
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Ecuador
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+EGY
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.9762843
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+EG
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Egypt, Arab Rep. 
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+ERI
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.2757473
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+ER
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Eritrea
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+ESP
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.5944697
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+ES
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Spain
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+EST
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.3483397
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+EE
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Estonia
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+ETH
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2.5795633
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+ET
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Ethiopia
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+FIN
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.0867900
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+FI
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Finland
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+FJI
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.7296602
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+FJ
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Fiji
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+FRA
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.1402342
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+FR
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+France
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+FRO
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.3725242
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+FO
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Faroe Islands
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+FSM
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.0377431
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+FM
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Micronesia, Fed. Sts.
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+GAB
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2.4840892
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+GA
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Gabon
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+GBR
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.5612554
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+GB
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+United Kingdom
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+GEO
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+-0.1656253
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+GE
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Georgia
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+GHA
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2.1625779
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+GH
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Ghana
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+GIB
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+-0.0504309
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+GI
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Gibraltar
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+GIN
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2.8345754
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+GN
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Guinea
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+GMB
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2.9218502
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+GM
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Gambia, The
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+GNB
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2.4565221
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+GW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Guinea-Bissau
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+GNQ
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+3.5285241
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+GQ
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Equatorial Guinea
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+GRC
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+-0.1544114
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+GR
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Greece
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+GRD
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.4913707
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+GD
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Grenada
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+GRL
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.3599177
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+GL
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Greenland
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+GTM
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.5603860
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+GT
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Guatemala
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+GUM
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.9163523
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+GU
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Guam
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+GUY
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.4817620
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+GY
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Guyana
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+HKG
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.7540949
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+HK
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Hong Kong SAR, China
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+HND
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.6406488
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+HN
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Honduras
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+HRV
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+-0.4988887
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+HR
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Croatia
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+HTI
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.2498994
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+HT
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Haiti
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+HUN
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+-0.0574556
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+HU
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Hungary
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+IDN
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.1005846
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+ID
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Indonesia
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+IMN
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.6012078
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+IM
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Isle of Man
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+IND
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.0151060
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+IN
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+India
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+IRL
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.5114940
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+IE
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Ireland
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+IRN
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.3522260
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+IR
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Iran, Islamic Rep. 
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+IRQ
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2.2541342
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+IQ
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Iraq
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+ISL
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2.4067243
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+IS
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Iceland
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+ISR
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.9012510
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+IL
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Israel
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+ITA
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+-0.2060386
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+IT
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Italy
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+JAM
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.4563562
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+JM
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Jamaica
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+JOR
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.4526643
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+JO
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Jordan
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+JPN
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+-0.2089995
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+JP
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Japan
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+KAZ
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.2907422
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+KZ
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Kazakhstan
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+KEN
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2.2719016
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+KE
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Kenya
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+KGZ
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2.0987178
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+KG
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Kyrgyz Republic
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+KHM
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.4463934
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+KH
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Cambodia
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+KIR
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.5069700
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+KI
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Kiribati
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+KNA
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.7257974
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+KN
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+St. Kitts and Nevis
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+KOR
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.1983532
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+KR
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Korea, Rep. 
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+KWT
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.6723232
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+KW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Kuwait
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+LAO
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.5171156
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+LA
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Lao PDR
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+LBN
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.0990614
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+LB
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Lebanon
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+LBR
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2.4271946
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+LR
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Liberia
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+LBY
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.4697777
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+LY
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Libya
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+LCA
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.4941342
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+LC
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+St. Lucia
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+LIE
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.2871105
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+LI
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Liechtenstein
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+LKA
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.6118759
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+LK
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Sri Lanka
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+LSO
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.8095665
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+LS
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Lesotho
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+LTU
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+-0.5260564
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+LT
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Lithuania
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+LUX
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.9459080
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+LU
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Luxembourg
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+LVA
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+-0.7492295
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+LV
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Latvia
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+MAC
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.3849968
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+MO
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Macao SAR, China
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+MAF
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.9611077
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+MF
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+St. Martin (French part)
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+MAR
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.2210509
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+MA
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Morocco
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+MCO
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.7263767
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+MC
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Monaco
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+MDA
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+-1.8052255
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+MD
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Moldova
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+MDG
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2.6562402
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+MG
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Madagascar
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+MDV
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2.9156061
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+MV
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Maldives
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+MEX
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.0913621
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+MX
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Mexico
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+MHL
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.6450314
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+MH
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Marshall Islands
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+MKD
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.0240494
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+MK
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+North Macedonia
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+MLI
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2.9966368
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+ML
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Mali
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+MLT
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+3.6514358
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+MT
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Malta
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+MMR
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.6255483
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+MM
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Myanmar
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+MNE
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+-0.0144652
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+ME
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Montenegro
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+MNG
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.7187531
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+MN
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Mongolia
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+MNP
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.5854633
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+MP
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Northern Mariana Islands
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+MOZ
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2.9071374
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+MZ
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Mozambique
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+MRT
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2.7412803
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+MR
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Mauritania
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+MUS
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.0322400
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+MU
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Mauritius
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+MWI
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2.6403752
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+MW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Malawi
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+MYS
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.3270606
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+MY
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Malaysia
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+NAM
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.8724809
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+NA
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Namibia
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+NCL
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.3080311
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+NC
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+New Caledonia
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+NER
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+3.7936682
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+NE
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Niger
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+NGA
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2.5648419
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+NG
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Nigeria
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+NIC
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.2295737
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+NI
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Nicaragua
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+NLD
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.5857245
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+NL
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Netherlands
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+NOR
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.6750614
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+NO
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Norway
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+NPL
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.8373371
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+NP
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Nepal
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+NRU
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+-0.9729165
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+NR
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Nauru
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+NZL
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.5577277
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+NZ
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+New Zealand
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+OMN
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2.9683134
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+OM
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Oman
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+PAK
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2.0292149
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+PK
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Pakistan
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+PAN
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.6517869
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+PA
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Panama
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+PER
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.6161572
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+PE
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Peru
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+PHL
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.3639947
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+PH
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Philippines
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+PLW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.5624406
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+PW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Palau
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+PNG
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.9536791
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+PG
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Papua New Guinea
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+POL
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+-0.0102073
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+PL
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Poland
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+PRI
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.0106465
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+PR
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Puerto Rico
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+PRK
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.4543199
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+KP
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Korea, Dem. People’s Rep. 
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+PRT
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+-0.1401726
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+PT
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Portugal
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+PRY
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.2651673
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+PY
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Paraguay
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+PSE
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2.5117825
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+PS
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+West Bank and Gaza
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+PYF
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.5774157
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+PF
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+French Polynesia
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+QAT
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.7952851
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+QA
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Qatar
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+ROU
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+-0.5974971
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+RO
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Romania
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+RUS
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+-0.0722344
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+RU
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Russian Federation
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+RWA
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2.6076526
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+RW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Rwanda
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SAU
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.6731117
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SA
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Saudi Arabia
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SDN
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2.3914340
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SD
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Sudan
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SEN
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2.7497474
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SN
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Senegal
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SGP
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.1442833
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SG
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Singapore
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SLB
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2.5653851
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SB
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Solomon Islands
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SLE
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2.1090753
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SL
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Sierra Leone
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SLV
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.5096833
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SV
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+El Salvador
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SMR
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.2217460
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SM
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+San Marino
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SOM
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2.8556021
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SO
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Somalia
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SRB
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+-0.5403537
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+RS
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Serbia
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SSD
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.7822244
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SS
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+South Sudan
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+STP
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.8907633
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+ST
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Sao Tome and Principe
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SUR
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.9298792
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SR
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Suriname
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SVK
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.1339713
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SK
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Slovak Republic
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SVN
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.6752808
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SI
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Slovenia
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SWE
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.0775804
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SE
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Sweden
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SWZ
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.0453092
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SZ
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Eswatini
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SXM
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.1941343
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SX
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Sint Maarten (Dutch part)
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SYC
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.8879253
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SC
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Seychelles
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SYR
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.9645117
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SY
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Syrian Arab Republic
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+TCA
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.3868604
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+TC
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Turks and Caicos Islands
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+TCD
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2.9859375
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+TD
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Chad
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+TGO
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2.4203352
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+TG
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Togo
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+THA
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.2834266
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+TH
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Thailand
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+TJK
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2.3905463
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+TJ
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Tajikistan
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+TKM
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.5463892
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+TM
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Turkmenistan
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+TLS
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.9638356
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+TL
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Timor-Leste
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+TON
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.2489871
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+TO
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Tonga
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+TTO
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.3673477
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+TT
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Trinidad and Tobago
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+TUN
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.1136437
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+TN
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Tunisia
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+TUR
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.3392604
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+TR
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Turkey
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+TUV
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.1920328
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+TV
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Tuvalu
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+TZA
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2.9516817
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+TZ
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Tanzania
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+UGA
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+3.5557405
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+UG
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Uganda
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+UKR
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+-0.5333553
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+UA
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Ukraine
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+URY
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.3598598
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+UY
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Uruguay
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+USA
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.4739535
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+US
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+United States
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+UZB
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.8773635
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+UZ
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Uzbekistan
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+VCT
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.3432990
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+VC
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+St. Vincent and the Grenadines
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+VEN
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+-1.2350411
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+VE
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Venezuela, RB
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+VGB
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.7621377
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+VG
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+British Virgin Islands
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+VIR
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+-0.3239582
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+VI
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Virgin Islands (U.S.)
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+VNM
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.9601105
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+VN
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Vietnam
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+VUT
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2.4309202
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+VU
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Vanuatu
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+WSM
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0.4918289
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+WS
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Samoa
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+XKX
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+-0.1579915
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+XK
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Kosovo
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+YEM
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2.3005801
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+YE
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Yemen, Rep. 
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+ZAF
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.3386174
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+ZA
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+South Africa
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+ZMB
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2.8923729
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+ZM
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Zambia
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+ZWE
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+2019
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1.4196810
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+SP.POP.GROW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Population growth (annual %)
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+ZW
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Zimbabwe
+&lt;/td&gt;
+&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;/div&gt;
@@ -444,7 +5297,7 @@ Map_pop_growth&lt;/code&gt;&lt;/pre&gt;
 &lt;tr class=&#34;even&#34;&gt;
 &lt;td align=&#34;left&#34;&gt;Communication&lt;/td&gt;
 &lt;td&gt;ARCEP&lt;/td&gt;
-&lt;td&gt;&lt;a href=&#34;https://www.data.gouv.fr/fr/datasets/mon-reseau-mobile/&#34;&gt;GRAPH’AGRI&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&#34;https://www.data.gouv.fr/fr/datasets/mon-reseau-mobile/&#34;&gt;ARCEP OPEN DATA&lt;/a&gt;&lt;/td&gt;
 &lt;td&gt;Cartographie de la couverture des opérateurs et des mesures de qualité de service réalisées en conditions réelles.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr class=&#34;odd&#34;&gt;

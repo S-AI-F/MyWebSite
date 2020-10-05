@@ -58,7 +58,7 @@ Les données sont accessibles et consultables à travers des bases de données t
 | UNESCO   |  [UIS.Stat](http://data.uis.unesco.org/?lang=fr) |  Plateforme centralisant des données concernant l’éducation, la science et la culture. |
 | La Banque Mondiale  |  [World Development indicators](https://donnees.banquemondiale.org/) |  Un ensemble de statistiques et d’indicateurs sur le développement dans le monde (économie, démographie, environnement...). |
 | L’OMS  |  [Global Health Observatory Data](https://www.who.int/data/gho) |  Des indicateurs et statistiques de santé  (maladies, pollution, accès à la santé…) |
-| Food and Agriculture Organisation  |  [Global Health Observatory Data](https://www.who.int/data/gho) |  Des indicateurs et statistiques de santé  (maladies, pollution, accès à la santé…). |
+| Food and Agriculture Organisation  |  [FAOSTAT](http://www.fao.org/faostat/en/#home) |  Des indicateurs et statistiques de santé  (maladies, pollution, accès à la santé…). |
 | World Resources  Institute  |  [Resource Watch, Global Forest Watch, Climate Watch...](https://www.wri.org/resources/data-platforms) |  Le WRI publie différentes données sur l’état des ressources naturelles du monde (climat, forêt, énergie, eau…) |
 | Commission Européenne  |  [Eurostat](https://ec.europa.eu/eurostat/fr/home), [EU OpenData Porta](https://data.europa.eu/euodp/en/home) |  Bases de données fournissant des informations sur les pays européens concernant différentes thématiques (démographie, environnement, énergie, économie, transport…) |
 
@@ -85,7 +85,7 @@ pop_geo <- left_join(world_geo, pop_data, by = c("iso_a2" = "iso2c"))
 
 # show sample of data
 
-kable(head(pop_data)) %>%
+kable(pop_data) %>%
   kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"),
                 font_size = 12) %>%
   scroll_box(width = "100%", height = "400px")
@@ -137,7 +137,7 @@ Le tableau ci-dessous contient un extrait des principales bases de données publ
 |Thématique | Producteur  | Données | Description |
 | :----- |-------- |--------|  ---------------- |
 | Agriculture  |Le service de la statistique et de la prospective du ministère de l’agriculture |  [GRAPH’AGRI](https://www.data.gouv.fr/fr/datasets/agreste-graphagri/)   | Les statistiques liées à l’agriculture, aux industries agro-alimentairess, population agricole |
-| Communication  | ARCEP |  [GRAPH’AGRI](https://www.data.gouv.fr/fr/datasets/mon-reseau-mobile/)   | Cartographie de la couverture des opérateurs et des mesures de qualité de service réalisées en conditions réelles. |
+| Communication  | ARCEP |  [ARCEP OPEN DATA](https://www.data.gouv.fr/fr/datasets/mon-reseau-mobile/)   | Cartographie de la couverture des opérateurs et des mesures de qualité de service réalisées en conditions réelles. |
 | Emploi  | INSEE |  [Banque de Données Macro-économique](https://www.data.gouv.fr/fr/datasets/marche-du-travail/)   | Base de données de séries et indices sur l’ensemble des domaines économiques |
 | Economie  | Ministère de l’économie et des finances |  [Impot locaux](https://www.data.gouv.fr/fr/datasets/impots-locaux/)   | Statistiques sur les impôts locaux |
 | Environnement  | Ministère de la transition écologique et solidaire |  [Entrepôt d’indicateurs et de données sur l’environnement](https://www.data.gouv.fr/fr/datasets/entrepot-d-indicateurs-et-de-donnees-sur-l-environnement-eider/)   | Un entrepôt qui centralise les statistiques sur l'environnement  agrégées à la région et au département. |
