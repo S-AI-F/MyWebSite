@@ -45,11 +45,9 @@ Il ne suffit pas de rendre l'accès publique aux données pour que ces données 
 
 # Plateformes et fournisseurs
 
-Pour dresser un petit panorama des plateformes d’open data, je vais focaliser tout d'abord sur celles qui sont produites et générées par des organismes institutionnels à différentes échelles (internationale, nationale, régionale…). Je citerais ensuite d’autres exemples de projets d’open data développés dans le cadre de projets collaboratifs, associatifs ou autre.
+Je vas focaliser dans cet article sur les plateformes d'open data qui sont gérées par des organismes publiques en les déclinat en fonction de la couverture sptiale des données: Internationale, nationale et régionale.
 
-## Organismes institutionnels
-
-### Echelle internationale
+## Echelle internationale
 
 La grande majorité des données ouvertes à couverture mondiale est publiée par des organismes appartenant à l’Organisation des Nations Unies. Ces organismes fournissent des services d’accès aux statistiques concernant différentes thématiques: démographie, environnement, économie, santé, agriculture, énergie…
 Les données sont accessibles et consultables à travers des bases de données téléchargeables, des APIs et des portails de visualisation. Le tableau ci-dessous liste un extrait des principales plateformes. 
@@ -66,7 +64,7 @@ Les données sont accessibles et consultables à travers des bases de données t
 
 Voici un exemple d'exploration des données de la Banque Mondiale en utilisant le pakage R [wbstats](http://nset-ornl.github.io/wbstats/).
 
-```{r wbdata, include=TRUE, message=FALSE, warning=FALSE}
+```{r wbdata, echo=TRUE, include=TRUE, message=FALSE, warning=FALSE}
 library(wbstats)
 library(dplyr)
 library(sf)
@@ -87,14 +85,14 @@ pop_geo <- left_join(world_geo, pop_data, by = c("iso_a2" = "iso2c"))
 
 # show sample of data
 
-kable(pop_data) %>%
+kable(head(pop_data)) %>%
   kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"),
                 font_size = 12) %>%
   scroll_box(width = "100%", height = "400px")
 ```
 
 
-```{r wbmap, include=TRUE, message=FALSE, warning=FALSE}
+```{r wbmap, echo=TRUE, include=TRUE, message=FALSE, warning=FALSE}
 
 library(leaflet)
 
@@ -126,7 +124,7 @@ Map_pop_growth <- leaflet(pop_geo, height = 400, width = "100%") %>%
 Map_pop_growth
 ```
 
-### Echelle nationale
+## Echelle nationale
 
 Dans le cadre des démarches de gouvernement ouvert et de transparence, plusieurs pays ont investi dans la mise en place de politiques d’ouverture de données. L’Open Knowledge Foundation a définit [un indice]((https://index.okfn.org/)) d'évaluation de l’état de l’ouverture des données publiques. 
 
@@ -158,7 +156,7 @@ D’autres organismes publiques fournissent des portails d’accès à leurs don
 - ...
 
 
-### Echelle régionale
+## Echelle régionale
 
 Les données ouvertes sont aussi fournies et publiées à travers des plateformes proposées par différentes collectivités territoriales (régions, départements, communes...). La majorité des régions française ont investi dans des portails  d’open data tels que la région ile de France, la Bretagne, Auvergne-Rhône-Alpes, Grand-Est… Le portail open data de la région ile de France, par exemple, compte environ 780 jeux de données dans 17 thématiques différentes (pistes cyclables, horaires des lignes de transport, jardins et parcs, qualité d’air…).
 
@@ -167,14 +165,6 @@ On retrouve aussi portails d’open data à l’échelle des villes et des métr
 > Vous pouvez consulter [ici](http://umap.openstreetmap.fr/fr/map/odservatoire_256503#6/45.813/5.603) la carte interactive des acteurs de l'open data territorial
 
 Le développement de ces plateformes a été facilité grâce àd ifférentes initiatives publiques et privées pour accompagner les collectivités locales dans leurs projets d'ouvertue des données: [OpenDataFrance](http://www.opendatafrance.net/), [OpenDataSoft](https://www.opendatasoft.com/), [Publidata](https://www.publidata.io/), [Datactivist](https://datactivist.coop/fr/), [Datapublica](https://www.data-publica.eu/)...
-
-## Organismes non-institutionnels
-
-Même si le mouvement d’open data concernait au début les gouvernements, des collectifs et des entreprises privées participent à la mise à disposition des données de différentes manières:
-
-- Google propose un moteur de recherche de données ouvertes: [Google dataset search](https://datasetsearch.research.google.com/)
-- Kaggle met à disposition des données à utiliser dans les challenge de data science: [Kaggle Datasets](https://www.kaggle.com/datasets)
-- Différentes données géo-spatiales sont fournies par [Uber](https://movement.uber.com/cities?lang=fr-FR), [Carto](https://carto.com/spatial-data-catalog/), [ArcGis](https://hub.arcgis.com/search)...
 
 # Usages
 
@@ -201,5 +191,5 @@ Peut être un jour on aura un seul portail d'accès aux données ouvertes?
 
 - https://s-ai-f.github.io/Open-Data-Book/
 - https://saifgeodata.shinyapps.io/OpenGeoKPI-Europe-App/
-- https://s-ai-f.github.io/Open-Data-Report-France/
+
 
