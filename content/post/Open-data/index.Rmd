@@ -6,13 +6,9 @@ output: html_document
 featured: true
 image: 
   placement: 1
-  focal_point: "Center"
-  preview_only: true
+  focal_point: ""
+  preview_only: false
   caption: "Photo by Carol and Mike Werner / Alamy/Alamy"
-header:
-  image: "lost_image.png"
-  caption: "Photo by: Carol and Mike Werner / Alamy/Alamy"
-image_preview: "lost_image.png"
 ---
 
 # Intro
