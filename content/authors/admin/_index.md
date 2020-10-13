@@ -57,16 +57,19 @@ My works are especially related to geo-spatial topics: human mobility, natural d
 
 I am a continuous learner and an eternal student. I share in this blog some of my personal data projects and tutorials.
 
+One of my favorite quotes is from Carl Friedrich Gauss: *"It is not knowledge, but the act of learning which grants the greatest enjoyment. When I have clarified and exhausted a subject, then I turn away from it, in order to go into darkness again ..."*
+
 My technical stack is:
 
-- **Data Science**: R, Python
+- **Data Science**: R, Python, SQL
+- **Machine Learning**: Keras, Tensorflow, MLflow
 - **IDE**: RStudio, PyCharm, Jupyter
 - **Project Management**: Slack, Azure Devops, Jira, Trello, Github projects
 - **Devops**: Github, Azure, Google Cloud Platform
 - **Reporting**: Shiny, Dash, Plotly, leaflet, Tableau, PowerBI
 - **Database**: SQL Server, PosgreSQL, Cassandra, Hive, MongoDB, BigTable.
-- **App Deployement**: heroku
-- **Continious Integration**
+- **App Deployement**: heroku, AppEngine
+- **CI/CD**: Gitlab, Azure DevOps
 
 
 
