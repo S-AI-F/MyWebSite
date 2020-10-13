@@ -1,6 +1,6 @@
 ---
 date: "2016-04-27T00:00:00Z"
-external_link: http://127.0.0.1:4321/project/geo-scales/
+external_link: ""
 image:
 links:
 - icon: twitter
