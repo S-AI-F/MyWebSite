@@ -8,7 +8,7 @@ image:
   placement: 1
   focal_point: ""
   preview_only: false
-  caption: "Photo by Carol and Mike Werner / Alamy/Alamy"
+  caption: ""
 ---
 
 # Intro
