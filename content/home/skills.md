@@ -21,21 +21,27 @@ subtitle = ""
   description = "Expert"
   
 [[feature]]
+  icon = "users"
+  icon_pack = "fas"
+  name = "Product Management"
+  description = "Senior"
+  
+[[feature]]
   icon = "python"
   icon_pack = "fab"
   name = "python"
   description = "Intermediate"
-  
-[[feature]]
-  icon = "chart-line"
-  icon_pack = "fas"
-  name = "Statistics"
-  description = "Senior" 
 
 [[feature]]
   icon = "database"
   icon_pack = "fas"
   name = "Database (SQL,Nosql)"
+  description = "Senior" 
+
+[[feature]]
+  icon = "chart-line"
+  icon_pack = "fas"
+  name = "Data Science"
   description = "Senior" 
   
 [[feature]]
@@ -44,10 +50,6 @@ subtitle = ""
   name = "Music"
   description = "Expert"
   
-[[feature]]
-  icon = "users"
-  icon_pack = "fas"
-  name = "Management"
-  description = "Intermediate"
+
 
 +++

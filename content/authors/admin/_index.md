@@ -45,7 +45,7 @@ user_groups:
 
 Data science | Open Data  | Geo-statistics | GIS | Data Product Management | Machine Learning | Artificial Intelligence 
 
-Hello!
+Hello! 
 
 I am a Data Specialist. 
 
@@ -70,6 +70,7 @@ My technical stack is:
 - **Database**: SQL Server, PosgreSQL, Cassandra, Hive, MongoDB, BigTable.
 - **App Deployement**: heroku, AppEngine
 - **CI/CD**: Gitlab, Azure DevOps
+- **GIS**: QGIS, sp, shapely, spstat
 
 
 
