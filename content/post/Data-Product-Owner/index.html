@@ -22,11 +22,13 @@ image:
 <h1>Intro</h1>
 <p>With the increasing number of Data Science and AI based products, we need to think more the work organization within Data teams.</p>
 <p>Inspired by Agile Frameworks and DevOps approaches, new Data and Machine Learning development workflows are being implemented (DataOps, MLOps…). While Agile methodologies have proven their efficiency in software development organizations, some adaptations are needed in Data Science and ML areas.</p>
-<p>We will discuss in this article one of these adaptations: The role and skill sets of <strong>Product Owner</strong>.</p>
-<p>The <em>first section</em> describes quickly the main principles related to Agile methodology in traditional software development.
-The <em>second section</em> presents specificities of Data and ML solutions.</p>
-<p>In <em>the last setion</em>, I try to discuss the tasks and responsibilities of <em>Data Science Product Owner</em>.</p>
-<p>The following graph presents the connection of different concepts and tools used for this article (with the R code embeded because it looks nicer).</p>
+<p>We will discuss in this article one of these adaptations: Role and skill set of the <strong>Product Owner</strong>.</p>
+<p>The <em>first section</em> describes quickly the main principles related to Agile methodology in traditional software development.</p>
+<p>The <em>second section</em> presents specificities of Data and ML solutions.</p>
+<p>In <em>the last setion</em>, I try to discuss the new tasks and responsibilities of <strong>Data Science Product Owner</strong>.</p>
+<blockquote>
+<p>The following interactive graph draws the connection of different concepts used for this article.</p>
+</blockquote>
 <pre class="r"><code>library(&#39;visNetwork&#39;) 
 
 DSPO.links &lt;- read.csv(&quot;data/DSPO.links.csv&quot;, header=T, as.is=T, sep = &quot;;&quot;)
@@ -68,17 +70,17 @@ visNetwork(vis.DSPO.nodes, vis.DSPO.links, height = &quot;500px&quot;, width = &
 <h2>Agile approaches</h2>
 <div id="history" class="section level3">
 <h3>History</h3>
-<p>Agile approaches consist of a set of practices and values for driving and building complex IT products. They were designed in reaction to the rigidity of traditional approaches in software development (V-cycle, waterfall…). They are based on the <a href="https://agilemanifesto.org/">Agile manifesto</a> written in 2001.</p>
-</div>
-<div id="values" class="section level3">
-<h3>Values</h3>
-<p>Agile approaches are based on an iterative, incremental and adaptive development cycle. The four fundamental values defined in the Agile manifesto are:</p>
+<p>Agile approaches consist of a set of practices and values for driving and building complex IT products. They were designed in reaction to the rigidity of traditional approaches in software development (V-cycle, waterfall…).</p>
+<p>They are based on an iterative, incremental and adaptive development cycle. The four fundamental values defined in the Agile manifesto are:</p>
 <ul>
-<li>Individuals and interactions over processes and tools</li>
-<li>Working software over comprehensive documentation</li>
-<li>Customer collaboration over contract negotiation</li>
-<li>Responding to change over following a plan</li>
+<li><em>Individuals and interactions over processes and tools</em></li>
+<li><em>Working software over comprehensive documentation</em></li>
+<li><em>Customer collaboration over contract negotiation</em></li>
+<li><em>Responding to change over following a plan</em></li>
 </ul>
+<blockquote>
+<p>See the <a href="https://agilemanifesto.org/">Agile manifesto</a> to know more about Agile values.</p>
+</blockquote>
 </div>
 <div id="frameworks" class="section level3">
 <h3>Frameworks</h3>
@@ -98,9 +100,9 @@ visNetwork(vis.DSPO.nodes, vis.DSPO.links, height = &quot;500px&quot;, width = &
 <ul>
 <li><strong>Sprint</strong>: It is a relatively short period of time (2 to 4 weeks), during which the development team realizes and tests a set of features defined with the Product Owner.</li>
 <li><strong>Product Backlog</strong>: It is an ordered and prioritized list of features constituting the IT product.</li>
-<li><strong>Items</strong>: The Product Backlog is composed of different “items” which contain a detailed description of the components to be carried out: requirements, improvements and corrections to be made, tests, definition of “done” …
-Those items are often grouped into different groups to better manage production times: User stories, epics, features, tasks, bugs … A list of items is selected by the team every sprint. This list constitutes the “Sprint Backlog”.</li>
-<li><strong>sprint planning</strong>: A Scrum event during which the development team selects with the Product Owner the prioritized items from product backlog that it considers to be able to achieve during the sprint.</li>
+<li><strong>Items</strong>: The Product Backlog is composed of different “items” which contain a detailed description of the components to be carried out: requirements, improvements and corrections to be made, tests, <span style="color: blue;">definition of “Done”</span>…
+Those items are often grouped into different categories to better manage the product backlog: <span style="color: blue;">User stories, epics, features, tasks, bugs </span>… A list of items is selected by the team every sprint. This list constitutes the <strong>“Sprint Backlog”</strong>.</li>
+<li><strong>Sprint planning</strong>: A Scrum event during which the development team selects with the Product Owner the prioritized items that it considers to be able to achieve during the sprint.</li>
 <li><strong>Sprint Review </strong>: A Scrum event that serves the development team to present the achieved features during the last sprint in order to collect feedback from the Product Owner and end users.</li>
 <li><strong>Sprint Retrospective</strong>: A Scrum event designed for inspecting the past sprint and identifying potential improvements in terms of productivity, efficiency, working condtions…</li>
 <li><strong>Daily meeting</strong>: A 15-minute daily standing meeting for synchronizing the daily tasks of the development team.</li>
@@ -111,72 +113,73 @@ Those items are often grouped into different groups to better manage production 
 </div>
 <div id="work-organization-tools" class="section level3">
 <h3>Work organization tools</h3>
-<p>There are several management and planning tools for product development based on Agile methodologies. These tools offer different functionalities such as sprint reports, dashboards, definition of the roadmap, velocity monitoring … Among these tools we can mention: <a href="https://www.atlassian.com/fr/software/jira">Jira</a>, <a href="https://trello.com/fr">Trello</a>, <a href="https://asana.com/fr">Asana</a>, <a href="https://www.atlassian.com/fr/software/confluence">confluence</a>, <a href="https://kanboard.org/">Kanboard</a>, <a href="https://www.openproject.org/fr/">OpenProject</a>, <a href="https://about.gitlab.com/">Gitlab</a>, <a href="https://github.com/features/project-management/">GithubProjects</a>, <a href="https://www.openproject.org/fr/">OpenProject</a> …</p>
+<p>There are several management and planning tools for product development based on Agile methodologies. These tools offer different festures such as sprint reports, dashboards, definition of the roadmap, velocity monitoring … Among these tools we can mention: <a href="https://www.atlassian.com/fr/software/jira">Jira</a>, <a href="https://trello.com/fr">Trello</a>, <a href="https://asana.com/fr">Asana</a>, <a href="https://www.atlassian.com/fr/software/confluence">confluence</a>, <a href="https://kanboard.org/">Kanboard</a>, <a href="https://www.openproject.org/fr/">OpenProject</a>, <a href="https://about.gitlab.com/">Gitlab</a>, <a href="https://github.com/features/project-management/">GithubProjects</a>, <a href="https://www.openproject.org/fr/">OpenProject</a> …</p>
 </div>
 </div>
 <div id="devops" class="section level2">
 <h2>DevOps</h2>
-<p>A combination of Development (Dev) and Operation (Ops), the Devops culture is part of agile approaches by offering work practices that encourage more collaboration and process sharing. These practices are essentially based on shorter release cycles with an increase in the frequency of deployments and continuous deliveries.</p>
+<p>DevOps is a set of practices that combines software developement (Dev) and IT Operations (Ops). With respect to Agile approaches, it encourages more collaboration and process sharing. These practices are essentially based on shorter release cycles with an increase in the frequency of deployments and continuous deliveries.</p>
 <ul>
 <li><p><strong>Continious Integration/Continious Deployement (CI/CD)</strong>:</p>
 <ul>
 <li><em>Continuous Integration</em>: Frequently integrate and merge code changes into the main code branch by setting up automated tests that run whenever new code is validated.</li>
-<li><em>Continuous Deployement</em>: Respect frequent and automated deployment of new application versions in a production environment. (Tools: Jenkins, CicleCI, Gitlab…)</li>
+<li><em>Continuous Deployement</em>: Respect frequent and automated deployment of new application versions in a production environment. <span style="font-size: 12px;"> <em>(Tools: <a href="https://www.jenkins.io/">Jenkins</a>, <a href="https://circleci.com/">CicleCI</a>, <a href="https://about.gitlab.com/">Gitlab</a>…)</em></span></li>
 </ul></li>
-<li><p><strong>Version management</strong>: Manage different versions of code and track revisions and change history to facilitate code review and retrieval. (Tools: Gitlab, Github, SourceForge, bitbucket)</p></li>
-<li><p><strong>Continious monitoring</strong>: Set up continuous monitoring and alerting tools to have complete real-time visibility into the performance and integrity of different components of the application.</p></li>
+<li><p><strong>Version management</strong>: Manage different versions of code by tracking revisions and change history to facilitate code review and retrieval. <span style="font-size: 12px;"> <em>(Tools: <a href="https://git-scm.com/">Git</a>, <a href="https://github.com/">Github</a>, <a href="https://subversion.apache.org/">Apache Subversion</a>, <a href="https://bitbucket.org/product/">bitbucket</a>…)</em></span></p></li>
+<li><p><strong>Continious monitoring</strong>: Set up continuous monitoring and alerting tools to have complete real-time visibility of the applications/infrastructure performance and integrity. <span style="font-size: 12px;"> <em>(Tools: <a href="https://www.elastic.co/fr/what-is/elk-stack">ELK</a>, <a href="https://sensu.io/">Sensu</a>, <a href="https://www.zabbix.com/">Zabbix</a>, <a href="https://www.nagios.com/">Nagios</a>, <a href="https://aws.amazon.com/fr/cloudwatch/">Amazon CloudWatch</a>…)</em></span></p></li>
 </ul>
 </div>
 <div id="the-product-owner" class="section level2">
 <h2>The Product Owner</h2>
 <p>The Product Owner plays an important role in an Agile organization. We can categorize his tasks and responsibilities into 5 main families:</p>
 <ul>
-<li><p><strong>Client / team interface</strong>: The PO is the representative of the customer and the product users in the Agile team. He/She transforms customer needs into technical features and guarantees that the product meets their expectations. He/She sets up metrics and KPIs to assess product usage and users’ behavior in order to identify potential improvements.</p></li>
+<li><p><strong>Client / team interface</strong>: The PO is the representative of the customer and the product users in the Agile team. He/She transforms customer needs into technical features and guarantees that the product meets their expectations. He/She sets up <span style="color: blue;">metrics and KPIs</span> to assess product usage and users’ behavior in order to identify potential improvements.</p></li>
 <li><p><strong>Product Development management</strong>: The PO is the master of the Backlog and the referent of product roadmap. He/She is in charge of:</p>
 <ul>
-<li>Proposing functional specifications and ensuring the correct translation in terms of technical specifications</li>
+<li>Proposing <span style="color: blue;">functional specifications</span> and ensuring the correct translation in terms of technical specifications</li>
 <li>Writing User Stories and defining their acceptance criteria</li>
-<li>Defining acceptance protocols and criterias</li>
-<li>Validating achievements using functional tests</li>
-<li>Guarantee the of delivered features quality</li>
-<li>Feeding the roadmap with Pprioritized features.</li>
+<li>Defining <span style="color: blue;">acceptance protocols and criterias</span><br />
+</li>
+<li>Validating achievements using functional <span style="color: blue;">tests</span></li>
+<li>Guarantee of delivered <span style="color: blue;">features’ quality</span></li>
+<li>Feeding the roadmap with <span style="color: blue;">prioritized</span> features.</li>
 </ul></li>
-<li><p><strong>Collaboration</strong>: By nature, the PO must collaborate with different members of the development team. As product reference, he/she is also needs to coordinate with other teams and departments: sales, marketing, infrastructure, etc.</p></li>
-<li><p><strong>Communication</strong>: The PO must share the product vision inside and outside the company. He/She can organize Product Discovery workshops with the team and clients. He/She is also responsible for the quality and completeness of the documentation.</p></li>
-<li><p><strong>Technology watch</strong>: The PO must ensure a continuous watch on the market in order to be able to situate the product among the competition within technical and functional dimensions.</p></li>
+<li><p><strong>Collaboration</strong>: By nature, the PO must collaborate with different members of the development team. As a product referent, he/she also needs to coordinate with other teams and departments: sales, marketing, infrastructure, etc.</p></li>
+<li><p><strong>Communication</strong>: The PO must share the product vision inside and outside the company. He/she can organize <span style="color: blue;">Product Discovery</span> workshops with the team and clients. He/She is also responsible for the quality and completeness of the <span style="color: red;">documentation.</span></p></li>
+<li><p><strong>Technology watch</strong>: The PO must ensure a continuous watch on the market in order to be able to situate the product among the competition.</p></li>
 </ul>
 </div>
 </div>
 <div id="agile-aproaches-data-science-products" class="section level1">
 <h1>Agile aproaches * Data Science products</h1>
-<p>In the intersection of statistics and computer science, Data Science applications are fast growing. While at the beginning, the majority of data science work stopped at the level of exploration and prototyping, increasing performance of technical tools, scientific efforts and use cases maturity have enabled the shift to idustrialized products.</p>
+<p>In the intersection of statistics and computer science, Data Science applications are fast growing. While at the beginning, the majority of data science work stopped at the level of exploration and prototyping, increasing performance of technical tools, scientific efforts and use cases maturity have enabled the shift to idustrialized and operational Data and ML products.</p>
 <p>These evolutions need to be accompanied by methodological tools for the management of a Data product and then rethink the application of agile approaches as well as the role of the Product Owner in Data Science workflow.</p>
 <div id="data-science-produtcs" class="section level2">
 <h2>Data Science produtcs</h2>
-<p>We can regroup Data Science products into two main catergories: Data Analytics &amp; Machine Learning.</p>
+<p>We can categorize Data Science products into two main families: Data Analytics &amp; Machine Learning.</p>
 <ul>
 <li><p><strong>Data Analytics</strong>: They essentially consist of a data processing pipelines attempting to extract knowledge and insights of the studied phenomena by using collected raw data:</p>
 <ul>
-<li><em>Data Extraction</em>: Frequency, disponibility, schemas, formats, data models…</li>
-<li><em>Data Storage</em>: Datawarehousing, datalake, relational Databases, NoSql Databases, Cloud Storage platforms…</li>
-<li><em>Data Exploration</em>: Profiling, Descriptive statistics, visualization…</li>
-<li><em>Data Transformation</em>: Cleaning, aggregating, automatic reporting… <br/></li>
+<li><em>Data Extraction</em>: <span style="font-size: 16px;">Frequency, disponibility, schemas, formats, data models…</span></li>
+<li><em>Data Storage</em>: <span style="font-size: 16px;">Datawarehousing, datalake, relational Databases, NoSql Databases, Cloud Storage platforms….</span></li>
+<li><em>Data Exploration</em>: <span style="font-size: 16px;">Profiling, Descriptive statistics, visualization…</span></li>
+<li><em>Data Transformation</em>: <span style="font-size: 16px;">Cleaning, aggregating, automatic reporting…</span> <br/></li>
 </ul></li>
-<li><p><strong>Machine Learning</strong>: It refers to products that are based on learning models (supervised, unsupervised, self-supervised) and which generate services aiming at replacing human tasks. We can distinguish 5 families of ML solutions on the market: <em>recommendation and scoring systems</em> (e.g. movie recommendation), <em>prediction of actions or events</em> (e.g. prediction of clicks on a video), <em>classification</em> (e.g. classification of emails as spam / not spam), <em>generative models</em> (e.g. translation), and <em>clustering</em> (e.g. clients segmentation).</p></li>
+<li><p><strong>Machine Learning</strong>: It refers to products that are based on learning models (supervised, unsupervised, self-supervised) and generate services aiming at replacing human tasks. We can distinguish 5 families of ML solutions on the market: <span style="color: blue;">recommendation and scoring systems</span> (e.g. movie recommendation), <span style="color: blue;">prediction of actions or events</span> (e.g. prediction of clicks on a video), <span style="color: blue;">classification</span> (e.g. classification of emails as spam / not spam), <span style="color: blue;">generative models</span> (e.g. translation), and <span style="color: blue;">clustering</span> (e.g. clients segmentation).</p></li>
 </ul>
 <p>In addition to the data analytics pipelines, ML products integrate specific techniques:</p>
 <ul>
-<li><em>Data transformation</em>: division into test/train, feature engineering, data augmentation…</li>
-<li><em>Modeling</em>: testing different statistical models, hyperparameters tuning</li>
+<li><em>Data transformation</em>: <span style="font-size: 16px;">division into test/train, feature engineering, data augmentation…</span></li>
+<li><em>Modeling</em>: <span style="font-size: 16px;">testing different statistical models, model design, hyperparameters tuning…</span>…</li>
 <li><em>Model training</em></li>
-<li><em>Model Evaluation and validation</em></li>
+<li><em>Model Evaluation and validation</em>: <span style="font-size: 16px;">cross validation, evaluation metrics…</span></li>
 <li><em>Model serving</em></li>
 <li><em>Model monitoring</em></li>
 </ul>
 </div>
 <div id="dataops-mlops" class="section level2">
 <h2>DataOps &amp; MLOps</h2>
-<p>Inspired by the Agile methodologies and DevOps culture, Data Science products are</p>
+<p>DataOps and MLOps are relatively new disciplines that seek to systemize the entire Data Science workflows (data pipelines and ML lifecyles), from science to production. They refer to a set of practices and tools aiming at improving the collaboration between data science and DevOps teams in order to acccelerate the time to market o fata science applications.</p>
 <table>
 <colgroup>
 <col width="15%" />
@@ -193,42 +196,48 @@ Those items are often grouped into different groups to better manage production 
 <tbody>
 <tr class="odd">
 <td align="left">CI/CD</td>
-<td>It consists of implementing CI/CD methods for managing the developement and the orchestration of data pipelines. <br/> <em>(Tools: Dataflow, Luigi, Airflow…)</em></td>
-<td>Continuous integration of testing/validating data, continious deployement of an entire ML training system and prediction services, Continious Training by automatically retraining and serving models <em>(Tools: MLflow, kubeflow, Cortex…)</em></td>
+<td>It consists of implementing CI/CD methods for managing the developement and the orchestration of data pipelines. <br/> <span style="font-size: 12px;"> <em>(Tools: Dataflow, Luigi, Airflow…)</em></span></td>
+<td>Continuous integration of testing/validating data. <br/> Continious deployement of an entire ML training system and prediction services. <br/> Continious Training by automatically retraining and serving models. <br/> <span style="font-size: 12px;"> <em>(Tools: MLflow, kubeflow, Cortex…)</em></span></td>
 </tr>
 <tr class="even">
 <td align="left">Version Management</td>
-<td>The versioning of the different Data sets collected, stored, and manipulated. Some tools, such as <a href="https://dvc.org/">Data Version Control (DVC)</a> and Data Catalogs propose new features for handeling this aspect.</td>
-<td>Intgrating Model versioning features (data version, modifications, parameters, stages..)</td>
+<td>The versioning of the different Data sets collected, stored, and manipulated by using data versioning systemes and Data catalogs. <br/> <span style="font-size: 12px;"> <em>(Tools: DVC)</em></span></td>
+<td>Intgrating Model versioning features (data version, modifications, parameters, stages..) <br/> <span style="font-size: 12px;"> <em>(Tools: MLflow, kubeflow…)</em></span></td>
 </tr>
 <tr class="odd">
 <td align="left">Monitoring</td>
-<td>Monitoring the collected and procuced data during the data pipline cycle (Data Quality, data schemas, volumetry…) and implementing alerting features for supervising these indicators.</td>
-<td>Model monitoring by tracking prediction performance metrics (accuracy, sensitivy…), input data quality, system latency… (Tools: Amazon SageMaker, MLFlow…)</td>
+<td>Monitoring the collected and transformed data during the data pipline cycle (quality, schemas, volumetry…) and implementing alerting features for supervising these indicators.</td>
+<td>Model monitoring by tracking prediction performance metrics (accuracy, sensitivy…), input data quality, system latency… <br/> <span style="font-size: 12px;"> <em>(Tools: MLflow, kubeflow, Amazon SageMaker…)</em></span></td>
 </tr>
 </tbody>
 </table>
+<blockquote>
+<p>You can find <a href="https://ml-ops.org/">here</a> a comprehensive documentation about MLOps principles and workflow.</p>
+</blockquote>
+<div class="figure">
+<img src="/img/mlops.png" alt="" />
+<p class="caption"><span style="font-size: 14px;"> <em>MLOps: Continuous delivery and automation pipelines in machine learning (source: “<a href="https://ml-ops.org/content/mlops-principles" class="uri">https://ml-ops.org/content/mlops-principles</a>”)</em></span></p>
+</div>
 </div>
 <div id="the-data-science-product-owner" class="section level2">
 <h2>The Data Science Product Owner</h2>
-<p>The skills necessary to properly manage Data or ML/AI products refer to the differences between traditional IT solutions (application, website, or any software) and solutions based essentially on data. As seen above, developing a Data product requires different techniques and methods from those used to develop traditional software.</p>
-<p>These new features will inevitably impact the product development cycle and the Product Owner, as the main referent, must be able to control them.</p>
+<p>Due to the differences between traditional IT solutions and data-driven solutions, new skills are needed for accurately managing Data and ML/AI products. Specificities of Data Science products (in terms of mathematical foundation, exploratory dimension and data-driven workflow) are significantly impacting and reshaping product development lifecycle. Therefore, Product Owner role and knowledge may expand to include the following aspects:</p>
 <ul>
 <li><p><strong>Product Development management</strong>:</p>
 <ul>
-<li><em>Feasibility assessment</em>: Integrate feasibility studies into the development process.</li>
-<li><em>Scientific methods</em>: Integrate the necessary steps for a implementing scientific approach: Observation, formulation of problems, hypothesis testing, phenomenon modeling, experimentation, evaluation, demonstration, precision and accuracy</li>
-<li><em>Delivery</em>: Knowing how to define deliverables adapted to data science work which are more experimental in nature and which do not necessarily result in a new functionality</li>
-<li><em>Estimation</em>: The exploratory nature of data science and machine learning work makes the task of estimating the effort required to develop new functionality more complex. It is preferable that a Data Science PO has experience with the exploration phases to be able to propose the right metrics and methods to estimate them and integrate them into the development cycle.</li>
-<li><em>Data</em>: Since a Data Science product is essentially based on input data, the PO must know them (quality, availability, formats, source, etc.). Manipulating the data allows it to better anticipate the processing necessary to exploit it.</li>
-<li><em>Models</em>:</li>
-<li><em>Validation</em>: The validation of Data functions often requires skills in data analysis, use of notebooks to standardize tests, mastery of model performance evaluation metrics, etc.</li>
+<li><span style="color: red;"><em>Feasibility assessment</em></span>: Streamlining the interface between R&amp;D processes (feasibility assessement, exploration, litterature review…) and production.</li>
+<li><span style="color: red;"><em>Scientific approach</em></span>: Integrating the necessary steps for implementing scientific approach in product development (observation, formulation of problems, hypothesis testing, phenomenon modelling, experimentation, evaluation…)</li>
+<li><span style="color: red;"><em>Intermediate delivery</em></span>: Designing intermediate delivery adapted to the experimental nature of data science workflows which do not necessarily result in a deployed feature.</li>
+<li><span style="color: red;"><em>Complex estimation</em></span>: Estimating efforts and charges for deploying a Data Science feature may be complex due to the exploratory phase and dependency to data availibility and quality. The PO needs a hands-on experience to better estimate featuress value and complexity and integrate them to the development cycle.</li>
+<li><span style="color: red;"><em>Data-driven</em></span>: As a referent of a data-driven product, the PO must know very well the input data (quality, availability, formats, source, etc.). Manipulating the data helps for better anticipating constraints and potential improvements of the delivered solution.</li>
+<li><span style="color: red;"><em>Modelling</em></span>: The Data Science PO should master the Machine Learning pipeline (model designing, testing, training, validating,serving…) and be able to explain model weakness for guiding the product roadmap to the most effective improvements.<br />
+</li>
+<li><span style="color: red;"><em>Validation</em></span>: The validation of data-driven features requires skills in data wrangling, use of notebooks to standardize tests, and a good understanding of evaluation metrics, etc.</li>
 </ul></li>
-<li><p><strong>Collaboration</strong>: In addition to the traditional development team, the Data Science PO must coordinate the tasks of the various profiles making up the Data team: <strong>Data engineers</strong>, <strong>Data Analysts</strong>, <strong>Data scientists</strong>, <strong>Data Architects</strong>… For this, it is important that he knows their responsibilities, skills and constraints in order to properly coordinate the development phases.</p></li>
-<li><p><strong>Technology watch</strong>: The development of industrialized applications based on data science and machine learning models remains a fairly young profession. It is important for the data product team, and particularly the PO, to be up to date in terms of tools, techniques, methods, algorithms and technologies… This makes it possible to better anticipate the changes to be integrated in order to improve some performance.</p></li>
+<li><p><strong>Collaboration</strong>: In addition to the traditional development team, the Data Science PO must coordinate the tasks of various profiles making up the Data team: <span style="color: blue;">Data Analysts, Data Scientists, Data engineers, Data Archtects</span>… He/she should knows their responsibilities, skills and constraints in order to better coordinate the development phases.</p></li>
+<li><p><strong>Technology watch</strong>: The development of industrialized applications based on data science and machine learning remains a fairly young profession. It is important for the data product team, and particularly the PO, to be up to date in terms of tools, techniques, methods, algorithms and technologies… This makes it possible to better anticipate the changes to be integrated in order to improve some performance.</p></li>
 </ul>
+<div id="htmlwidget-2" style="width:100%;height:500px;" class="visNetwork html-widget"></div>
+<script type="application/json" data-for="htmlwidget-2">{"x":{"nodes":{"X":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51],"concepts":["Software Engineering","Agile","Agile Frameworks","Scrum","Scrum team","Backlog","DevOps","DataOps","CI/CD","Versioning","Supervision","MLOps","Data Analytics","Machine Learning","Data Science","Organization","Data Team","Data Science Product Owner","Data Analytic Process","Data Transformation","Machine Learning Process","DS Applications","Kanban","XP","SAFe","Scrum master","Dev Team","Product Owner","User stroy","Feature","Epic","Data CI/CD","Data versioning","Data monitoring","Model CI/CD","Model  versioning","Model  monitoring","Data Scientist","Data Engineer","Data Analyst","Data Architect","Machine Learning Engineer","Data collecting","Data Storage","Cleaning","Descriptive statistics","Visualization","Modeling","Feature Engineering","Model Training","Model Evaluation"],"id":["c1","c2","c3","c4","c5","c6","c7","c8","c9","c10","c11","c12","c13","c14","c15","c16","c17","c18","c19","c20","c21","c22","c23","c24","c25","c26","c27","c28","c29","c30","c31","c32","c33","c34","c35","c36","c37","c38","c39","c40","c41","c42","c43","c44","c45","c46","c47","c48","c49","c50","c51"],"concept.size":[40,40,10,20,10,10,20,20,10,10,10,20,30,30,40,10,10,20,10,10,10,10,10,10,10,10,10,20,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10],"font.size":[25,25,null,17,null,null,17,17,null,null,null,17,20,20,25,null,null,17,null,null,null,null,null,null,null,null,null,17,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],"concept.category":["Software Engineering","Agile Methodology","Agile Methodology","Agile Methodology","Agile Methodology","Agile Methodology","Software Engineering","Data Science","Software Engineering","Software Engineering","Software Engineering","Data Science","Data Science","Data Science","Data Science","Data Science","Data Science","Data Science","Data Science","Data Science","Data Science","Data Science","Agile Methodology","Agile Methodology","Agile Methodology","Agile Methodology","Agile Methodology","Agile Methodology","Agile Methodology","Agile Methodology","Agile Methodology","Data Science","Data Science","Data Science","Data Science","Data Science","Data Science","Data Science","Data Science","Data Science","Data Science","Data Science","Data Science","Data Science","Data Science","Data Science","Data Science","Data Science","Data Science","Data Science","Data Science"],"concept.type":[3,2,2,2,2,2,3,1,3,3,3,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],"group":["Software Engineering","Agile","Agile","Scrum","Scrum","Scrum","Software Engineering","Data Analytics","Software Engineering","Software Engineering","Software Engineering","Machine Learning",null,"Data Science","Data Science","Data Science","Data Science",null,"Data Analytics","Data Analytics","Machine Learning","Data Science","Agile","Agile","Agile","Scrum","Scrum","Scrum","Scrum","Scrum","Scrum","Data Analytics","Data Analytics","Data Analytics","Machine Learning","Machine Learning","Machine Learning","Data Science","Data Science","Data Science","Data Science","Data Science","Data Analytics","Data Analytics","Data Analytics","Data Analytics","Data Analytics","Machine Learning","Machine Learning","Machine Learning","Machine Learning"],"shape":["dot","dot","diamond","dot","diamond","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","diamond","dot","dot","diamond","dot","diamond","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot","dot"],"shadow":[true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true],"title":["Software Engineering","Agile","Agile Frameworks","Scrum","Scrum team","Backlog","DevOps","DataOps","CI/CD","Versioning","Supervision","MLOps","Data Analytics","Machine Learning","Data Science","Organization","Data Team","Data Science Product Owner","Data Analytic Process","Data Transformation","Machine Learning Process","DS Applications","Kanban","XP","SAFe","Scrum master","Dev Team","Product Owner","User stroy","Feature","Epic","Data CI/CD","Data versioning","Data monitoring","Model CI/CD","Model  versioning","Model  monitoring","Data Scientist","Data Engineer","Data Analyst","Data Architect","Machine Learning Engineer","Data collecting","Data Storage","Cleaning","Descriptive statistics","Visualization","Modeling","Feature Engineering","Model Training","Model Evaluation"],"label":["Software Engineering","Agile","Agile Frameworks","Scrum","Scrum team","Backlog","DevOps","DataOps","CI/CD","Versioning","Supervision","MLOps","Data Analytics","Machine Learning","Data Science","Organization","Data Team","Data Science Product Owner","Data Analytic Process","Data Transformation","Machine Learning Process","DS Applications","Kanban","XP","SAFe","Scrum master","Dev Team","Product Owner","User stroy","Feature","Epic","Data CI/CD","Data versioning","Data monitoring","Model CI/CD","Model  versioning","Model  monitoring","Data Scientist","Data Engineer","Data Analyst","Data Architect","Machine Learning Engineer","Data collecting","Data Storage","Cleaning","Descriptive statistics","Visualization","Modeling","Feature Engineering","Model Training","Model Evaluation"],"size":[40,40,10,20,10,10,20,20,10,10,10,20,30,30,40,10,10,20,10,10,10,10,10,10,10,10,10,20,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10],"borderWidth":[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],"color.background":["gold","tomato","tomato","tomato","tomato","tomato","gold","slategrey","gold","gold","gold","slategrey","slategrey","slategrey","slategrey","slategrey","slategrey","slategrey","slategrey","slategrey","slategrey","slategrey","tomato","tomato","tomato","tomato","tomato","tomato","tomato","tomato","tomato","slategrey","slategrey","slategrey","slategrey","slategrey","slategrey","slategrey","slategrey","slategrey","slategrey","slategrey","slategrey","slategrey","slategrey","slategrey","slategrey","slategrey","slategrey","slategrey","slategrey"],"color.border":["black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black","black"],"color.highlight.background":["orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange","orange"],"color.highlight.border":["darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred","darkred"]},"edges":{"X":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56],"from":["c1","c2","c2","c3","c3","c3","c3","c4","c5","c5","c5","c4","c6","c6","c6","c7","c7","c7","c8","c8","c8","c9","c10","c11","c12","c12","c12","c9","c10","c11","c13","c14","c15","c16","c17","c17","c17","c17","c17","c16","c18","c13","c19","c19","c19","c20","c20","c20","c14","c21","c21","c21","c21","c15","c22","c22"],"to":["c7","c7","c3","c4","c23","c24","c25","c5","c26","c27","c28","c6","c29","c30","c31","c9","c10","c11","c32","c33","c34","c32","c33","c34","c35","c36","c37","c35","c36","c37","c8","c12","c16","c17","c38","c39","c40","c41","c42","c18","c28","c19","c43","c44","c20","c45","c46","c47","c21","c48","c49","c50","c51","c22","c13","c14"],"type":["","","","","","","","team","Roles","Roles","Roles","support","components","components","components","principles","principles","principles","","","","","","","","","","","","","","","","technical","","","","","","functional","Data Science Knwoledge","","","","","","","","","","","","","","",""],"width":[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],"length":[50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50,50],"title":["","","","","","","","team","Roles","Roles","Roles","support","components","components","components","principles","principles","principles","","","","","","","","","","","","","","","","technical","","","","","","functional","Data Science Knwoledge","","","","","","","","","","","","","","",""],"label":["","","","","","","","team","Roles","Roles","Roles","support","components","components","components","principles","principles","principles","","","","","","","","","","","","","","","","technical","","","","","","functional","Data Science Knwoledge","","","","","","","","","","","","","","",""]},"nodesToDataframe":true,"edgesToDataframe":true,"options":{"width":"100%","height":"100%","nodes":{"shape":"dot"},"manipulation":{"enabled":false},"interaction":{"hover":true},"layout":{"randomSeed":123}},"groups":["Software Engineering","Agile","Scrum","Data Analytics","Machine Learning",null,"Data Science"],"width":"100%","height":"500px","idselection":{"enabled":false,"style":"width: 150px; height: 26px","useLabels":true,"main":"Select by id"},"byselection":{"enabled":false,"style":"width: 150px; height: 26px","multiple":false,"hideColor":"rgba(200,200,200,0.5)","highlight":false},"main":null,"submain":null,"footer":null,"background":"rgba(0, 0, 0, 0)","tooltipStay":300,"tooltipStyle":"position: fixed;visibility:hidden;padding: 5px;white-space: nowrap;font-family: verdana;font-size:14px;font-color:#000000;background-color: #f5f4ed;-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;border: 1px solid #808074;box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);","highlight":{"enabled":true,"hoverNearest":true,"degree":2,"algorithm":"all","hideColor":"rgba(200,200,200,0.5)","labelOnly":true},"collapse":{"enabled":false,"fit":false,"resetHighlight":true,"clusterOptions":null,"keepCoord":true,"labelSuffix":"(cluster)"}},"evals":[],"jsHooks":[]}</script>
 </div>
-</div>
-<div id="conclusion" class="section level1">
-<h1>Conclusion</h1>
 </div>
