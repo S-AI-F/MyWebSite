@@ -19,6 +19,7 @@ interests:
 - Data Product management
 - Geospatial Analysis
 - Environmental science
+- Location Intelligence
 name: Saif Shabou
 organizations:
 - name: Freelance

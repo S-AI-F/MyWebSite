@@ -215,4 +215,6 @@ visNetwork(vis.DSPO.nodes, vis.DSPO.links, height = "500px", width = "100%") %>%
   visLayout(randomSeed = 123) 
 ```
 
+---------------
 
+_*I dedicate this article to my ex-colleagues in [OpenfieldLive](https://openfieldlive.com/), together we tried to apply Scrum framework for developing Location Intelligence solutions, we tried to find our own methodology and collaboration degree between Data and DevOps teams, and with them I experimented the role of Data Science Product Owner.*_
