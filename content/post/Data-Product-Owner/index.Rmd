@@ -23,7 +23,7 @@ The *first section* describes quickly the main principles related to Agile metho
 
 The *second section* presents specificities of Data and ML solutions.
 
-In *the last setion*, I try to discuss the new tasks and responsibilities of **Data Science Product Owner**.
+In *the last section*, I try to discuss the new tasks and responsibilities of **Data Science Product Owner**.
 
 > The following interactive graph draws the connection of different concepts used for this article. 
 
@@ -99,7 +99,7 @@ Scrum defines 3 roles:
 Those items are often grouped into different categories to better manage the product backlog: <span style="color: blue;">User stories, epics, features, tasks, bugs </span>... A list of items is selected by the team every sprint. This list constitutes the **“Sprint Backlog”**.
 - **Sprint planning**: A Scrum event during which the development team selects with the Product Owner the prioritized items that it considers to be able to achieve during the sprint.
 - **Sprint Review **: A Scrum event that serves the development team to present the achieved features during the last sprint in order to collect feedback from the Product Owner and end users.
-- **Sprint Retrospective**: A Scrum event designed for inspecting the past sprint and identifying potential improvements in terms of productivity, efficiency, working condtions...
+- **Sprint Retrospective**: A Scrum event designed for inspecting the past sprint and identifying potential improvements in terms of productivity, efficiency, working conditions...
 - **Daily meeting**: A 15-minute daily standing meeting for synchronizing the daily tasks of the development team.
 
 > You can find out a complete description of Scrum methodology [here](https://www.scrum.org/).
@@ -111,16 +111,16 @@ There are several management and planning tools for product development based on
 ## DevOps
 
 
-DevOps is a set of practices that combines software developement (Dev) and IT Operations (Ops). With respect to Agile approaches, it encourages more collaboration and process sharing. These practices are essentially based on shorter release cycles with an increase in the frequency of deployments and continuous deliveries. 
+DevOps is a set of practices that combines software development (Dev) and IT Operations (Ops). With respect to Agile approaches, it encourages more collaboration and process sharing. These practices are essentially based on shorter release cycles with an increase in the frequency of deployments and continuous deliveries. 
 
 - **Continious Integration/Continious Deployement (CI/CD)**:
 
   - *Continuous Integration*: Frequently integrate and merge code changes into the main code branch by setting up automated tests that run whenever new code is validated.
-  - *Continuous Deployement*: Respect frequent and automated deployment of new application versions in a production environment. <span style="font-size: 12px;"> *(Tools: [Jenkins](https://www.jenkins.io/), [CicleCI](https://circleci.com/), [Gitlab](https://about.gitlab.com/)...)*</span> 
+  - *Continuous Deployment*: Respect frequent and automated deployment of new application versions in a production environment. <span style="font-size: 12px;"> *(Tools: [Jenkins](https://www.jenkins.io/), [CicleCI](https://circleci.com/), [Gitlab](https://about.gitlab.com/)...)*</span> 
 
 - **Version management**: Manage different versions of code by tracking revisions and change history to facilitate code review and retrieval. <span style="font-size: 12px;"> *(Tools: [Git](https://git-scm.com/), [Github](https://github.com/), [Apache Subversion](https://subversion.apache.org/), [bitbucket](https://bitbucket.org/product/)...)*</span> 
 
-- **Continious monitoring**: Set up continuous monitoring and alerting tools to have complete real-time visibility of the applications/infrastructure performance and integrity. <span style="font-size: 12px;"> *(Tools: [ELK](https://www.elastic.co/fr/what-is/elk-stack), [Sensu](https://sensu.io/), [Zabbix](https://www.zabbix.com/), [Nagios](https://www.nagios.com/), [Amazon CloudWatch](https://aws.amazon.com/fr/cloudwatch/)...)*</span> 
+- **Continuous monitoring**: Set up continuous monitoring and alerting tools to have complete real-time visibility of the applications/infrastructure performance and integrity. <span style="font-size: 12px;"> *(Tools: [ELK](https://www.elastic.co/fr/what-is/elk-stack), [Sensu](https://sensu.io/), [Zabbix](https://www.zabbix.com/), [Nagios](https://www.nagios.com/), [Amazon CloudWatch](https://aws.amazon.com/fr/cloudwatch/)...)*</span> 
 
 
 ## The Product Owner
@@ -147,7 +147,7 @@ The Product Owner plays an important role in an Agile organization. We can categ
 
 # Agile aproaches * Data Science products
 
-In the intersection of statistics and computer science, Data Science applications are fast growing. While at the beginning, the majority of data science work stopped at the level of exploration and prototyping, increasing performance of technical tools, scientific efforts and use cases maturity have enabled the shift to idustrialized and operational Data and ML products.
+In the intersection of statistics and computer science, Data Science applications are fast growing. While at the beginning, the majority of data science work stopped at the level of exploration and prototyping, increasing performance of technical tools, scientific efforts and use cases maturity have enabled the shift to industrialized and operational Data and ML products.
 
 These evolutions need to be accompanied by methodological tools for the management of a Data product and then rethink the application of agile approaches as well as the role of the Product Owner in Data Science workflow.
 
@@ -158,7 +158,7 @@ We can categorize Data Science products into two main families: Data Analytics &
 - **Data Analytics**: They essentially consist of a data processing pipelines attempting to extract knowledge and insights of the studied phenomena by using collected raw data:
 
   - *Data Extraction*:  <span style="font-size: 16px;">Frequency, disponibility, schemas, formats, data models...</span> 
-  - *Data Storage*: <span style="font-size: 16px;">Datawarehousing, datalake, relational Databases, NoSql Databases, Cloud Storage platforms....</span> 
+  - *Data Storage*: <span style="font-size: 16px;">Data warehousing, datalake, relational Databases, NoSql Databases, Cloud Storage platforms....</span> 
   - *Data Exploration*: <span style="font-size: 16px;">Profiling, Descriptive statistics, visualization...</span> 
   - *Data Transformation*: <span style="font-size: 16px;">Cleaning, aggregating, automatic reporting...</span> <br/>
 
@@ -175,13 +175,13 @@ In addition to the data analytics pipelines, ML products integrate specific tech
   
 ## DataOps & MLOps
 
-DataOps and MLOps are relatively new disciplines that seek to systemize the entire Data Science workflows (data pipelines and ML lifecyles), from science to production. They refer to a set of practices and tools aiming at improving the collaboration between data science and DevOps teams in order to acccelerate the time to market o fata science applications. 
+DataOps and MLOps are relatively new disciplines that seek to systemize the entire Data Science workflows (data pipelines and ML lifecycles), from science to production. They refer to a set of practices and tools aiming at improving the collaboration between data science and DevOps teams in order to accelerate the time to market of data science applications. 
 
 |   | DataOps | MLOps |
 | :----- |---------------- |  ---------------- |
-|  CI/CD | It consists of implementing CI/CD methods for managing the developement and the orchestration of data pipelines. <br/>  <span style="font-size: 12px;"> *(Tools: Dataflow, Luigi, Airflow...)*</span>   | Continuous integration of testing/validating data. <br/> Continuous deployement of an entire ML training system and prediction services. <br/> Continious  Training by automatically retraining and serving models. <br/>  <span style="font-size: 12px;"> *(Tools: MLflow, kubeflow, Cortex...)*</span> |
-|  Version Management | The versioning of the different Data sets collected, stored, and manipulated by using data versioning systemes and Data catalogs. <br/>  <span style="font-size: 12px;"> *(Tools: DVC)*</span> | Versioning of ML pipelines and  metadata (data version, modifications, parameters, stages..) <br/>  <span style="font-size: 12px;"> *(Tools: MLflow, kubeflow...)*</span>  |
-|  Monitoring | Monitoring the collected and transformed data during the data pipline cycle (quality, schemas, volumetry...) and implementing alerting systems for supervising specific indicators. | Model monitoring by tracking prediction performance metrics (accuracy, sensitivy...), input data quality, system latency... <br/>  <span style="font-size: 12px;"> *(Tools: MLflow, kubeflow, Amazon SageMaker...)*</span>|
+|  CI/CD | It consists of implementing CI/CD methods for managing the developement and the orchestration of data pipelines. <br/>  <span style="font-size: 12px;"> *(Tools: Dataflow, Luigi, Airflow...)*</span>   | Continuous integration of testing/validating data. <br/> Continuous deployment of an entire ML training system and prediction services. <br/> Continuous  Training by automatically retraining and serving models. <br/>  <span style="font-size: 12px;"> *(Tools: MLflow, kubeflow, Cortex...)*</span> |
+|  Version Management | The versioning of the different Data sets collected, stored, and manipulated by using data versioning systems and Data catalogs. <br/>  <span style="font-size: 12px;"> *(Tools: DVC)*</span> | Versioning of ML pipelines and  metadata (data version, modifications, parameters, stages..) <br/>  <span style="font-size: 12px;"> *(Tools: MLflow, kubeflow...)*</span>  |
+|  Monitoring | Monitoring the collected and transformed data during the data pipeline cycle (quality, schemas, volumetry...) and implementing alerting systems for supervising specific indicators. | Model monitoring by tracking prediction performance metrics (accuracy, sensitivity...), input data quality, system latency... <br/>  <span style="font-size: 12px;"> *(Tools: MLflow, kubeflow, Amazon SageMaker...)*</span>|
 
 > You can find [here](https://ml-ops.org/) a comprehensive documentation about MLOps principles and workflow.
 
@@ -196,15 +196,15 @@ Due to the differences between traditional IT solutions and data-driven solution
 
 - **Product Development management**:
 
-  - <span style="color: red;">*Feasibility assessment*</span>: Streamlining the interface between R&D processes (feasibility assessement, exploration, litterature review...) and production.
+  - <span style="color: red;">*Feasibility assessment*</span>: Streamlining the interface between R&D processes (feasibility assessment, exploration, literature review...) and production.
   - <span style="color: red;">*Scientific approach*</span>: Integrating the necessary steps for implementing scientific approach in product development (observation, formulation of problems, hypothesis testing, phenomenon modelling, experimentation, evaluation...)
   - <span style="color: red;">*Intermediate delivery*</span>: Designing intermediate delivery adapted to the experimental nature of data science workflows which do not necessarily result in a deployed feature.
-  - <span style="color: red;">*Complex estimation*</span>: Estimating efforts and charges for deploying a Data Science feature may be complex due to the exploratory phase and dependency to data availibility and quality. The PO needs a hands-on experience to better estimate featuress value and complexity and integrate them to the development cycle.
+  - <span style="color: red;">*Complex estimation*</span>: Estimating efforts and charges for deploying a Data Science feature may be complex due to the exploratory phase and dependency to data availibility and quality. The PO needs hands-on experience to better estimate featuress value and complexity and integrate them to the development cycle.
   - <span style="color: red;">*Data-driven*</span>: As a referent of a data-driven product, the PO must know very well the input data (quality, availability, formats, source, etc.). Manipulating the data helps for better anticipating  constraints and potential improvements of the delivered solution.
   - <span style="color: red;">*Modelling*</span>: The Data Science PO should master the Machine Learning pipeline (model designing, testing, training, validating,serving...) and be able to explain model weakness for guiding the product roadmap to the most effective improvements.  
   - <span style="color: red;">*Validation*</span>: The validation of data-driven features requires skills in data wrangling, use of notebooks to standardize tests, and a good understanding of evaluation metrics, etc.
   
-- **Collaboration**: In addition to the traditional development team, the Data Science PO must coordinate the tasks of various profiles making up the Data team: <span style="color: blue;">Data Analysts, Data Scientists, Data engineers, Data Archtects</span>... He/she should knows their responsibilities, skills and constraints in order to better coordinate the development phases.
+- **Collaboration**: In addition to the traditional development team, the Data Science PO must coordinate the tasks of various profiles making up the Data team: <span style="color: blue;">Data Analysts, Data Scientists, Data engineers, Data Architects</span>... He/she should know their responsibilities, skills and constraints in order to better coordinate the development phases.
 
 - **Technology watch**: The development of industrialized applications based on data science and machine learning remains a fairly young profession. It is important for the data product team, and particularly the PO, to be up to date in terms of tools, techniques, methods, algorithms and technologies… This makes it possible to better anticipate the changes to be integrated in order to improve some performance.
 
