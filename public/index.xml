@@ -77,6 +77,62 @@
     </item>
     
     <item>
+      <title>Art Painting</title>
+      <link>/project/painting/</link>
+      <pubDate>Wed, 14 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>/project/painting/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Wolf&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;/img/painting_wolf.jpg&#34; alt=&#34;Wolf&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Sad moon&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;/img/painting_moon.jpg&#34; alt=&#34;Sad moon&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Lonliness&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;/img/painting_solitude.jpg&#34; alt=&#34;Lonliness&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Wine&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;/img/painting_wine.jpg&#34; alt=&#34;Wine&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Shadows&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;/img/painting_shadows.jpg&#34; alt=&#34;Shadows (Acrylic on wood)&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Confusions&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;/img/painting_confusion.jpg&#34; alt=&#34;Confusions&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Storm&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;/img/painting_storm.jpg&#34; alt=&#34;Storm&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Blues&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;/img/painting_blues.jpg&#34; alt=&#34;Blues&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Browns&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;/img/painting_browns.jpg&#34; alt=&#34;Browns&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Reds&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;/img/painting_reds.jpg&#34; alt=&#34;Reds&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Greens&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;/img/painting_greens.jpg&#34; alt=&#34;Greens&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Forest&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;/img/painting_forest.jpg&#34; alt=&#34;Forest&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Data Science Product Owner</title>
       <link>/post/data-product-owner/</link>
       <pubDate>Wed, 14 Oct 2020 00:00:00 +0000</pubDate>
@@ -5644,6 +5700,14 @@ Map_pop_growth&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;So I decided to put things in boxes, organize them and find a method to organize them. And to leave physical traces of this organization of my knowledge. I have to model my knowledge-base. Is it relational? Is it a graph? Is it an entity-relationship model? How are the concepts related?&lt;/p&gt;
 &lt;p&gt;And of course, like any knowledge wanderer and hyperlink traveler, I got lost in knowledge about knowledge modeling and engineering. Like a model that analyzes text on text-analysis models. Trapped in an infinite loop. I would never get out. But I’m satisfied with it. And if you ask me: but what do you really want to do in your life? I would type the word “life” on wikipedia and start a new journey.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Climate Disclosure Project - Kaggle Competition</title>
+      <link>/project/cdp/</link>
+      <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
+      <guid>/project/cdp/</guid>
+      <description></description>
     </item>
     
     <item>
