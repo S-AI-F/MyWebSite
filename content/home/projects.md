@@ -44,6 +44,10 @@ subtitle = ""
   [[content.filter_button]]
     name = "Data Science"
     tag = "Data Science"
+    
+  [[content.filter_button]]
+    name = "Art"
+    tag = "Art"
 
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.

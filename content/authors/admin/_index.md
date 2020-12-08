@@ -7,7 +7,7 @@ education:
   - course: PhD in Geo-science
     institution: University of Grenoble
     year: 2016
-  - course: MEng in Environmental Psyhology
+  - course: MEng in Environmental Psychology
     institution: University of Nîmes
     year: 2013
   - course: MEng in Architecture and Urban Planning
@@ -31,7 +31,7 @@ social:
   link: '#contact'
 - icon: linkedin
   icon_pack: fab
-  link: https://fr.linkedin.com/in/saif-shabou-19174961
+  link: https://fr.linkedin.com/in/saif-shabou-phd-19174961
 - icon: google-scholar
   icon_pack: ai
   link: https://scholar.google.com/citations?hl=fr&user=WqQB450AAAAJ
@@ -44,17 +44,17 @@ user_groups:
 - Visitors
 ---
 
-Data science | Open Data  | Geo-statistics | GIS | Data Product Management | Machine Learning | Artificial Intelligence 
+Data science | Data Product Management | Open Data  | Geo-statistics | GIS  | Machine Learning | Artificial Intelligence 
 
 Hello! 
 
-I am a Data Specialist. 
+I am a Data & Product Specialist. 
 
 I have data science skills, combined with data architecture and engineering knowledge, and data product management experiences.
 
 My goal is to participate in building robust and impactful Data products.
 
-My works are especially related to geo-spatial topics: human mobility, natural disasters, spatial-temporal  dynamics, smart building, urban planning...
+My works are especially related to geo-spatial topics: human mobility, environmental risks, spatial-temporal  dynamics, smart building, urban planning...
 
 I am a continuous learner and an eternal student. I share in this blog some of my personal data projects and tutorials.
 
@@ -65,11 +65,11 @@ My technical stack is:
 - **Data Science**: R, Python, SQL
 - **Machine Learning**: Keras, Tensorflow, MLflow
 - **IDE**: RStudio, PyCharm, Jupyter
-- **Project Management**: Slack, Azure Devops, Jira, Trello, Github projects
+- **Product Management**: Slack, Azure Boards, Jira, Trello, Github projects
 - **Devops**: Github, Azure, Google Cloud Platform
 - **Reporting**: Shiny, Dash, Plotly, leaflet, Tableau, PowerBI
 - **Database**: SQL Server, PosgreSQL, Cassandra, Hive, MongoDB, BigTable.
-- **App Deployement**: heroku, AppEngine
+- **App Deployement**: heroku, Google AppEngine
 - **CI/CD**: Gitlab, Azure DevOps
 - **GIS**: QGIS, sp, shapely, spstat
 

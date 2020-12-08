@@ -28,12 +28,32 @@
   </url>
   
   <url>
+    <loc>/tags/art/</loc>
+    <lastmod>2020-10-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/painting/</loc>
+    <lastmod>2020-10-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/post/data-product-owner/</loc>
     <lastmod>2020-10-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/post/</loc>
+    <lastmod>2020-10-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/</loc>
+    <lastmod>2020-10-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
     <lastmod>2020-10-14T00:00:00+00:00</lastmod>
   </url>
   
@@ -45,6 +65,11 @@
   <url>
     <loc>/post/lost-hypertext/lost-in-hypertext/</loc>
     <lastmod>2020-06-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/cdp/</loc>
+    <lastmod>2020-05-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -84,16 +109,6 @@
   
   <url>
     <loc>/project/open-geo-kpi/</loc>
-    <lastmod>2020-05-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/project/</loc>
-    <lastmod>2020-05-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2020-05-06T00:00:00+00:00</lastmod>
   </url>
   
