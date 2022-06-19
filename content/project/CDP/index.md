@@ -6,6 +6,6 @@ summary: A data analysis report providing a methodology for computing cities' cl
 tags: 
 - Data Science
 - Geo-spatial
-title: Climate Disclosure Project - Kaggle Competition 
+title: Carbon Disclosure Project - Kaggle Competition 
 ---
 
