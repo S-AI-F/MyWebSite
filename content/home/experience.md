@@ -19,6 +19,41 @@ date_format = "Jan 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
 [[experience]]
+  title = "Data & Analytics Associate"
+  company = "The World Resources Institute"
+  company_url = "https://www.wri.org/"
+  location = "The Hague"
+  date_start = "2021-07-01"
+  date_end = ""
+  description = """
+  
+  Use geospatial data and develop data products to help cities adapt to climate change, reduce exposure to climate
+  hazards, effectively manage their natural resources and reduce their greenhouse gas emissions.
+
+  Responsibilities include:
+  
+  * Research, design, prototype and deploy scalable data products and platforms by providing insights related to climate risks impacts, climate actions, biodiversity monitoring and urban development challenges.
+  * Guide development, maintenance and updates of multiple data products and tools
+  """
+  
+[[experience]]
+  title = "Founder - President"
+  company = "OpenGeoScales"
+  company_url = "https://github.com/OpenGeoScales"
+  location = "Paris"
+  date_start = "2020-01-01"
+  date_end = ""
+  description = """
+  Responsibilities include:
+  
+  * Build an open source project for standardizing climate open data at multiple geospatial scales.
+  * Build and manage a community of 30 data specialists volunteers
+  * Data Product management (roadmap, issues, tasks...)
+  * [Project description](https://dataforgood-fr.medium.com/9-opengeoscales-simplifier-lacc%C3%A8s-et-l-usage-des-donn%C3%A9es-ouvertes-li%C3%A9es-aux-enjeux-30312aea0cf0)
+  """
+
+
+[[experience]]
   title = "Product Owner Data Science"
   company = "Freelance"
   company_url = ""
@@ -29,7 +64,7 @@ date_format = "Jan 2006"
   Responsibilities include:
   
   * Accompanying companies in the design, development and deployment of Data and AI products
-  *  Working with Data Architects/Scientists/Engineers to design robusts data piplines: integration, storage, analytics and visualization
+  *  Working with Data Architects/Scientists/Engineers to design robust data pipelines: integration, storage, analytics and visualization
   * Specification and documentation of Data Product's features
   * Feeding backlog with prioritized features/USs and managing product roadmap
   """
@@ -48,7 +83,7 @@ date_format = "Jan 2006"
   * Leading Data Science team and responsible of Data Analytics products
   * Deployment of Location Intelligence and Smart Building Analytics solution providing our clients with insights about building usage and occupancy, visitors behaviors and environmental quality
   * Conception and development of Data Science product based on big data technologies: real time data collection and profiling, data catalog management, automated data cleaning, spatio-temporal modeling and aggregation, KPI’s Geo-visualization...
-  * Defining product roadmap and strategies, feature prioritisation based on client’s needs, Backlog management and User stories definition, sharing product vision
+  * Defining product roadmap and strategies, feature prioritization based on clients needs, Backlog management and User stories definition, sharing product vision
   * Technical and functional documentation and communication about our product features
   """
   
@@ -77,7 +112,7 @@ date_format = "Jan 2006"
   date_end = "2017-02-01"
   description = """
   Responsibilities include:
-  * Participation to European Research project "ANYWHERE": EnhANcing emergencY management and response to extreme WeatHER and climate Event funded within EU’s Horizon 2020 research and innovation programme: http://anywhere-h2020.eu/
+  * Participation to European Research project "ANYWHERE": EnhANcing emergencY management and response to extreme WeatHER and climate Event funded within EU’s Horizon 2020 research and innovation program: http://anywhere-h2020.eu/
   * Statstical analysis of population exposure to Natural Hazards
   
   Publications:

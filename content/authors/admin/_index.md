@@ -11,20 +11,21 @@ education:
     institution: University of Nîmes
     year: 2013
   - course: MEng in Architecture and Urban Planning
-    institution: Scool of Architecture and Urban Planning
+    institution: School of Architecture and Urban Planning
     year: 2011
 email: ""
 interests:
-- Data science
 - Data Product management
-- Geospatial Analysis
-- Environmental science
-- Location Intelligence
+- Data science
+- Geo-Analytics
+- Climate & Environmental science
 name: Saif Shabou
 organizations:
-- name: Freelance
-  url: ""
-role: Product Owner - Data Scientist
+- name: The World Resources Institute
+  url: "https://www.wri.org/"
+- name: OpenGeoScales
+  url: "https://opengeoscales.github.io/CarbonGeoScales/"
+role: Building data products for a better planet
 social:
 - icon: envelope
   icon_pack: fas
